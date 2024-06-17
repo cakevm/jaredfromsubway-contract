@@ -1,0 +1,21 @@
+# Node + Python
+node_modules/
+.venv/
+*.egg-info/
+
+# Cached Build
+cache/
+out/
+
+# IDEs
+.vscode/
+.idea/
+
+# huffc artifacts
+artifacts
+
+# Ignore flattened files
+flattened.txt
+
+# Ignore Broadcasts
+broadcast

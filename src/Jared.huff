@@ -1,0 +1,11191 @@
+#define macro MAIN() = takes (0) returns (0) {
+    callvalue
+    push1 0xff
+    and
+    number
+    push1 0xff
+    and
+    eq
+    push20 0xae2fc483527b8ef99eb5d9b44875f005ba1fae13
+    caller
+    eq
+    and
+    push1 0x28
+    jumpi
+    push2 0x342f
+    jump
+
+// dispatcher
+_jump_dest_dispatcher_000028:
+    push0
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jump
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    mul
+    stop
+    stop
+    swap16
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_0000fd:
+    stop
+    stop
+
+// uniswap v2 WETH -> TOKEN
+// example: https://etherscan.io/tx/0x4cc87bdbb974e8df68403a44f37adc48f1911af9dc4ab26084429ae1016ee551
+_jump_dest_univ2_weth_token_000100:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_227)
+    __tablestart(table_227)
+    push0
+    codecopy
+    callvalue
+    push1 0x41
+    mstore
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x64
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    pop
+    __tablesize(table_250)
+    __tablestart(table_250)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000180:
+    stop
+    stop
+    stop
+    push19 0xdd0000000000000000000000006b75d8af0000
+    stop
+    stop
+    signextend
+    push27 0x7ddf000ba900b4009a800000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    sdiv
+    swap13
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// add v3 liq + swap
+// example: https://etherscan.io/tx/0x54b3de5b4fc4434e59e308d881e160462dfb8c6605b96d0bb3ab830971dbe0c4
+_jump_dest_univ3_add_liq_000240:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_467)
+    __tablestart(table_467)
+    push0
+    codecopy
+    callvalue
+    push1 0x41
+    mstore
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x64
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    pop
+    __tablesize(table_490)
+    __tablestart(table_490)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    push1 0x1a
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_0002c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_560)
+    __tablestart(table_560)
+    push0
+    codecopy
+    push1 0x04
+    dup7
+    push1 0x1b
+    add
+    dup8
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x64
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    pop
+    __tablesize(table_593)
+    __tablestart(table_593)
+    push0
+    codecopy
+    push1 0x04
+    dup8
+    push1 0x16
+    add
+    dup9
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    swap1
+    push1 0x1f
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// uni v2 TOKEN (USCD) - TOKEN
+// example: https://etherscan.io/tx/0x2c6d64fbded7aa9a88794153f5ab1aa2e60c199d61cbf3d466c231da363130f4
+_jump_dest_univ2_uscd_token_000340:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_651)
+    __tablestart(table_651)
+    push0
+    codecopy
+    callvalue
+    push1 0x25
+    mstore
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+    gas
+    call
+    pop
+    __tablesize(table_674)
+    __tablestart(table_674)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// univ2, v3
+// example: https://etherscan.io/tx/0xde0bc1b5cb64e1dcdaf56bc420525c2d4ff7f30897a89bc7d052a25b30ac80f6
+_jump_dest_univ2_univ3_arb_0003c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_745)
+    __tablestart(table_745)
+    push0
+    codecopy
+    callvalue
+    push1 0x25
+    mstore
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+    gas
+    call
+    pop
+    __tablesize(table_768)
+    __tablestart(table_768)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    push1 0x1a
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000440:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_838)
+    __tablestart(table_838)
+    push0
+    codecopy
+    push1 0x04
+    dup7
+    push1 0x1b
+    add
+    dup8
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+    gas
+    call
+    pop
+    __tablesize(table_871)
+    __tablestart(table_871)
+    push0
+    codecopy
+    push1 0x04
+    dup8
+    push1 0x16
+    add
+    dup9
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    swap1
+    push1 0x1f
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// usdt -> token univ2
+// example: https://etherscan.io/tx/0x103697cc14a3bdfe7934e43debccd389b86fe3754dee816eea02a1fb8171c5c5
+_jump_dest_univ2_usdt_token_0004c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_929)
+    __tablestart(table_929)
+    push0
+    codecopy
+    callvalue
+    push1 0x25
+    mstore
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xdac17f958d2ee523a2206206994597c13d831ec7
+    gas
+    call
+    pop
+    __tablesize(table_952)
+    __tablestart(table_952)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// univ2 USDT - univ2 multiple
+// example: https://etherscan.io/tx/0xb6d9836aef79dd02c46e48fa40e73fc8b0a5a3965cf2f4b520b3d0fea29738b7
+_jump_dest_univ2_usdt_multi_000540:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1023)
+    __tablestart(table_1023)
+    push0
+    codecopy
+    callvalue
+    push1 0x25
+    mstore
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xdac17f958d2ee523a2206206994597c13d831ec7
+    gas
+    call
+    pop
+    __tablesize(table_1046)
+    __tablestart(table_1046)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    push1 0x1a
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_0005c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1116)
+    __tablestart(table_1116)
+    push0
+    codecopy
+    push1 0x04
+    dup7
+    push1 0x1b
+    add
+    dup8
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xdac17f958d2ee523a2206206994597c13d831ec7
+    gas
+    call
+    pop
+    __tablesize(table_1149)
+    __tablestart(table_1149)
+    push0
+    codecopy
+    push1 0x04
+    dup8
+    push1 0x16
+    add
+    dup9
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    swap1
+    push1 0x1f
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// sushi token -> weth
+// example: https://etherscan.io/tx/0xcbcf2f04125d142328abc53360abe2533516973f0f7e6870ba6413245fc83947
+_jump_dest_sushi_token_weth_000640:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1207)
+    __tablestart(table_1207)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_1237)
+    __tablestart(table_1237)
+    push0
+    codecopy
+    callvalue
+    push1 0x21
+    mstore
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// sushiswap token -> weth
+// example: https://etherscan.io/tx/0x6e3584149b8ba05f5d839c632a8f4ea5508581d7bda5fbbdfdaf0c45d0bd208f
+_jump_dest_sushi_tokhen_weth_again_0006c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1319)
+    __tablestart(table_1319)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_1349)
+    __tablestart(table_1349)
+    push1 0x04
+    codecopy
+    callvalue
+    chainid
+    mstore
+    __tablesize(table_1356)
+    __tablestart(table_1356)
+    push0
+    codecopy
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// sushi, uni arb
+// example: https://etherscan.io/tx/0x71ea0ad0179b3887639408b1561c884159bf519dde33ddd2a79984b238c463f8
+_jump_dest_sushi_uni_arb_000740:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1429)
+    __tablestart(table_1429)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_1459)
+    __tablestart(table_1459)
+    push0
+    codecopy
+    callvalue
+    push1 0x21
+    mstore
+    gas
+    call
+    push1 0x2e
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// two swaps sushi
+// example: https://etherscan.io/tx/0x9d099d1329a725ab3c12c52d2ee9a411f535c9bc05f84e47deba1fb3e2d15b59
+_jump_dest_sushi_two_0007c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1540)
+    __tablestart(table_1540)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_1570)
+    __tablestart(table_1570)
+    push1 0x04
+    codecopy
+    callvalue
+    chainid
+    mstore
+    __tablesize(table_1577)
+    __tablestart(table_1577)
+    push0
+    codecopy
+    gas
+    call
+    push1 0x2e
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000840:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1649)
+    __tablestart(table_1649)
+    push0
+    codecopy
+    push1 0x04
+    dup7
+    push1 0x2a
+    add
+    dup8
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup12
+    push1 0x16
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_1687)
+    __tablestart(table_1687)
+    push0
+    codecopy
+    push1 0x04
+    dup8
+    push1 0x2f
+    add
+    dup9
+    push1 0x2e
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    swap1
+    push1 0x33
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// univ2 TOKEN -> TOKEN (USDC)
+// example: https://etherscan.io/tx/0x6d2477dbf665c9561d056033f869d0e4ea9d7bc87d1febd02f0d65f64194671e
+_jump_dest_univ2_token_usdc_0008c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1758)
+    __tablestart(table_1758)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_1788)
+    __tablestart(table_1788)
+    push0
+    codecopy
+    callvalue
+    push1 0x25
+    mstore
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// univ2 - multiple
+// example: https://etherscan.io/tx/0x1e41c03cf37a1435c5f15239066aba31c3973f2972a58b9a9f4c175558357107
+_jump_dest_univ2_multi_000940:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1870)
+    __tablestart(table_1870)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_1900)
+    __tablestart(table_1900)
+    push0
+    codecopy
+    callvalue
+    push1 0x25
+    mstore
+    gas
+    call
+    push1 0x2e
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// token -> usdc univ2
+// example: https://etherscan.io/tx/0xba5b98252105561b58b977f7c64d95fd26d1a390f41c2c63614eb7e061ca1e63
+_jump_dest_univ2_token_usdc_again_0009c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_1981)
+    __tablestart(table_1981)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_2011)
+    __tablestart(table_2011)
+    push0
+    codecopy
+    callvalue
+    push1 0x08
+    shr
+    push1 0x04
+    mstore
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// swaps univ2, v3
+// example: https://etherscan.io/tx/0xef4c146f49acf8742ad111ac75df14b1ea6b8c581651ef526b390bea0acbadae
+_jump_dest_univ2_v3_swap_000a40:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    __tablesize(table_2092)
+    __tablestart(table_2092)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x2a
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x02
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x16
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_2122)
+    __tablestart(table_2122)
+    push0
+    codecopy
+    callvalue
+    push1 0x08
+    shr
+    push1 0x04
+    mstore
+    gas
+    call
+    push1 0x2e
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// univ2 arb token-token
+// example: https://etherscan.io/tx/0xec055cffb6c01fce66b71cae9826c575b65ab056162d8778eeccccde377f4304
+_jump_dest_univ2_arb_token_token_000ac0:
+    chainid
+    chainid
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jump
+    stop
+    byte
+    push30 0x4d0000000000000000000000000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000b00:
+    __tablesize(table_2230)
+    __tablestart(table_2230)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x1c
+    add
+    push1 0x10
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x1a
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+
+// withdraw ETH
+// example: https://etherscan.io/tx/0xf48772f5a49a18e7ee0a7f005229396a8cd32e8f1630a09884b5500c6510eae4
+_jump_dest_withdraw_eth_000b40:
+    callvalue
+    chainid
+    mstore
+    __tablesize(table_2284)
+    __tablestart(table_2284)
+    push0
+    codecopy
+    push0
+    push0
+    push1 0x24
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    push0
+    push0
+    push0
+    push0
+    selfbalance
+    caller
+    gas
+    call
+    and
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// self destruct
+// example: https://etherscan.io/tx/0xc1d028ab9f0a2f50e22ff1963f5e1fe6ab8bd364c0c2b81a6875aa89a8ec6e88
+_jump_dest_self_destruct_000b80:
+    caller
+    selfdestruct
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000bc0:
+    __tablesize(table_2384)
+    __tablestart(table_2384)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x08
+    add
+    push1 0x30
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x02
+    add
+    dup3
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x64
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    swap1
+    push1 0x06
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000c40:
+    __tablesize(table_2481)
+    __tablestart(table_2481)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x08
+    add
+    push1 0x10
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x02
+    add
+    dup3
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+    gas
+    call
+    swap1
+    push1 0x06
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000cc0:
+    __tablesize(table_2578)
+    __tablestart(table_2578)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x08
+    add
+    push1 0x10
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x02
+    add
+    dup3
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push20 0xdac17f958d2ee523a2206206994597c13d831ec7
+    gas
+    call
+    swap1
+    push1 0x06
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000d40:
+    __tablesize(table_2675)
+    __tablestart(table_2675)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x1a
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_000d80:
+    __tablesize(table_2730)
+    __tablestart(table_2730)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x1c
+    add
+    push1 0x50
+    calldatacopy
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x1a
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    mulmod
+    mcopy
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    slt
+    stop
+    stop
+    stop
+    stop
+    dup14
+    dup12
+    log4
+    gaslimit
+    swap6
+    dup11
+    push22 0xa0704d566bf2c8ffffffffffffffffffffffffffffff
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    mstore
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    selfdestruct
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    add
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001000:
+    __tablesize(table_3312)
+    __tablestart(table_3312)
+    push0
+    codecopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup6
+    push1 0x22
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    chainid
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001040:
+    __tablesize(table_3369)
+    __tablestart(table_3369)
+    push0
+    codecopy
+    dup1
+    push1 0x15
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0x04
+    mstore
+    push0
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x29
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001080:
+    __tablesize(table_3422)
+    __tablestart(table_3422)
+    push0
+    codecopy
+    dup1
+    chainid
+    add
+    calldataload
+    push1 0xe4
+    mstore
+    push1 0x14
+    dup2
+    push1 0x21
+    add
+    push2 0x0130
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x35
+    add
+    push2 0x0150
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x4a
+    add
+    dup3
+    push1 0x49
+    add
+    calldataload
+    push0
+    byte
+    push1 0xa4
+    add
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x4f
+    add
+    dup3
+    push1 0x4e
+    add
+    calldataload
+    push0
+    byte
+    push2 0x0164
+    add
+    calldatacopy
+    push0
+    push0
+    push2 0x01c4
+    push0
+    push0
+    push20 0xba12222222228d8ba445958a75a0704d566bf2c8
+    gas
+    call
+    swap1
+    push1 0x53
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001100:
+    __tablesize(table_3504)
+    __tablestart(table_3504)
+    push0
+    codecopy
+    dup1
+    chainid
+    add
+    calldataload
+    push1 0xe4
+    mstore
+    push1 0x14
+    dup2
+    push1 0x21
+    add
+    push2 0x0130
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x35
+    add
+    push2 0x0150
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x4a
+    add
+    dup3
+    push1 0x49
+    add
+    calldataload
+    push0
+    byte
+    push1 0xa4
+    add
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x4f
+    add
+    dup3
+    push1 0x4e
+    add
+    calldataload
+    push0
+    byte
+    push2 0x0164
+    add
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x55
+    add
+    push1 0x70
+    calldatacopy
+    push0
+    push0
+    push2 0x01c4
+    push0
+    push0
+    push20 0xba12222222228d8ba445958a75a0704d566bf2c8
+    gas
+    call
+    swap1
+    push1 0x53
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+
+_jump_dest_unknown_001180:
+    __tablesize(table_3583)
+    __tablestart(table_3583)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x02
+    add
+    push1 0x10
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup6
+    push1 0x16
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    chainid
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    push29 0x5e9ea40000000000000000000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    selfdestruct
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001280:
+    __tablesize(table_3800)
+    __tablestart(table_3800)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x15
+    add
+    push1 0x10
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x2e
+    add
+    push1 0x50
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x2a
+    add
+    dup3
+    push1 0x29
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x43
+    add
+    dup3
+    push1 0x42
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x47
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    slt
+    dup11
+    stop
+    addmod
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    selfdestruct
+    revert
+    dup10
+    push4 0xefd1fc6a
+    pop
+    push5 0x88495d951d
+    mstore
+    push4 0x988d2500
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    log0
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push3 0x000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    codecopy
+    stop
+    stop
+    invalid
+    dup14
+    exp
+    stop
+    tload
+    stop
+    stop
+    stop
+    stop
+    addmod
+    extcodecopy
+    push22 0x6cc2000000000000000000000000c02aaa39b223fe8d
+    exp
+    stop
+    tload
+    stop
+    stop
+    stop
+    stop
+    addmod
+    extcodecopy
+    push22 0x6cc20000000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    slt
+    dup11
+    stop
+    addmod
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    add
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    add
+    stop
+    mul
+    push23 0xa400000000000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    log0
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push3 0x000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    codecopy
+    stop
+    stop
+    invalid
+    dup14
+    exp
+    stop
+    tload
+    stop
+    stop
+    stop
+    stop
+    addmod
+    extcodecopy
+    push22 0x6cc2000000000000000000000000c02aaa39b223fe8d
+    exp
+    stop
+    tload
+    stop
+    stop
+    stop
+    stop
+    addmod
+    extcodecopy
+    push22 0x6cc20000000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001521:
+    __tablesize(table_4300)
+    __tablestart(table_4300)
+    push0
+    codecopy
+    caller
+    push1 0x24
+    mstore
+    push1 0x04
+    calldataload
+    push1 0x44
+    mstore
+    push0
+    push0
+    push1 0x64
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    stop
+    stop
+
+_jump_dest_unknown_001552:
+    __tablesize(table_4322)
+    __tablestart(table_4322)
+    push0
+    codecopy
+    caller
+    push1 0x24
+    mstore
+    push1 0x24
+    calldataload
+    push1 0x44
+    mstore
+    push0
+    push0
+    push1 0x64
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// USDT -> WETH univ3
+// example: https://etherscan.io/tx/0x090ceb83d76f40864aa03c6aa43fc9ed4585e253e5c7e217a045cd71c0cfe4dc
+_jump_dest_univ3_usdt_weth_0015c0:
+    __tablesize(table_4405)
+    __tablestart(table_4405)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    push1 0x15
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    push1 0x1a
+    push1 0xf0
+    calldatacopy
+    push1 0x2e
+    calldataload
+    push30 0x152100000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    chainid
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    callvalue
+    push1 0x18
+    shl
+    gt
+    push1 0x20
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    and
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// swap v3 WETH -> TOKEN
+// example: https://etherscan.io/tx/0x0680c5c80774ee28749a0e5a66e3bc6c4ef7373f9976a7def0f313be2f1e8d54
+_jump_dest_univ3_weth_token_001640:
+    __tablesize(table_4483)
+    __tablestart(table_4483)
+    push0
+    codecopy
+    stop
+    callvalue
+    push1 0x18
+    shl
+    push1 0x44
+    mstore
+    push1 0x14
+    push1 0x1a
+    push1 0xd0
+    calldatacopy
+    push1 0x2e
+    calldataload
+    push30 0x155200000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    chainid
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    push0
+    sub
+    push1 0x16
+    calldataload
+    push1 0x15
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+
+_jump_dest_unknown_0016a2:
+    __tablesize(table_4532)
+    __tablestart(table_4532)
+    push0
+    codecopy
+    caller
+    push1 0x04
+    mstore
+    push1 0x04
+    calldataload
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x84
+    calldataload
+    gas
+    call
+    stop
+    stop
+
+_jump_dest_unknown_0016c1:
+    __tablesize(table_4555)
+    __tablestart(table_4555)
+    push0
+    codecopy
+    caller
+    push1 0x04
+    mstore
+    push1 0x24
+    calldataload
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0xa4
+    calldataload
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// usdt -> weth univ3
+// example: https://etherscan.io/tx/0xba028689d9b4a3e40d3aeae676e03b2c788a63a72ac1670603417d173d59c943
+_jump_dest_univ3_usdt_weth_again_001700:
+    __tablesize(table_4610)
+    __tablestart(table_4610)
+    push0
+    codecopy
+    push1 0x04
+    push1 0x16
+    push1 0x15
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    push1 0x1a
+    push1 0xf0
+    calldatacopy
+    push1 0x2e
+    calldataload
+    push30 0x16c100000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    chainid
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    push0
+    sub
+    callvalue
+    push1 0x18
+    shl
+    lt
+    and
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// swap v3 TOKEN -> WETH
+// example: https://etherscan.io/tx/0x8d80af5cf67eb1943f4004380770ee4eb0f69ac2fdd353dd296da8c51d4ef1d9
+_jump_dest_univ3_token_weth_001780:
+    __tablesize(table_4689)
+    __tablestart(table_4689)
+    push0
+    codecopy
+    callvalue
+    push1 0x18
+    shl
+    push0
+    sub
+    push1 0x44
+    mstore
+    push1 0x14
+    push1 0x1a
+    push1 0xd0
+    calldatacopy
+    push1 0x2e
+    calldataload
+    push30 0x16a200000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    chainid
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push1 0x20
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    push0
+    mload
+    push1 0x16
+    calldataload
+    push1 0x15
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001800:
+    __tablesize(table_4766)
+    __tablestart(table_4766)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x1b
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x1f
+    add
+    push1 0xd0
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x33
+    add
+    push1 0xf0
+    calldatacopy
+    dup1
+    push1 0x47
+    add
+    calldataload
+    push32 0xffff000000000000000000000000000000000000000000000000000000000000
+    and
+    push30 0x16a200000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    dup3
+    push1 0x16
+    add
+    calldataload
+    dup4
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    push1 0x20
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    swap1
+    push1 0x49
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_0018c0:
+    __tablesize(table_4871)
+    __tablestart(table_4871)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x4b
+    add
+    push1 0x10
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x1b
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x1f
+    add
+    push1 0xd0
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x33
+    add
+    push1 0xf0
+    calldatacopy
+    dup1
+    push1 0x47
+    add
+    calldataload
+    push32 0xffff000000000000000000000000000000000000000000000000000000000000
+    and
+    push30 0x16a200000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    dup3
+    push1 0x16
+    add
+    calldataload
+    dup4
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    push1 0x20
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    swap1
+    push1 0x49
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001980:
+    __tablesize(table_4973)
+    __tablestart(table_4973)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x1f
+    add
+    push1 0xd0
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x33
+    add
+    push1 0xf0
+    calldatacopy
+    dup1
+    push1 0x47
+    add
+    calldataload
+    push32 0xffff000000000000000000000000000000000000000000000000000000000000
+    and
+    push30 0x16c100000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    push0
+    sub
+    dup3
+    push1 0x1b
+    add
+    calldataload
+    dup4
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    swap1
+    push1 0x49
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001a40:
+    __tablesize(table_5080)
+    __tablestart(table_5080)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x4b
+    add
+    push1 0x10
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x1f
+    add
+    push1 0xd0
+    calldatacopy
+    push1 0x14
+    dup2
+    push1 0x33
+    add
+    push1 0xf0
+    calldatacopy
+    dup1
+    push1 0x47
+    add
+    calldataload
+    push32 0xffff000000000000000000000000000000000000000000000000000000000000
+    and
+    push30 0x16c100000000000000000000000000000000000000000000000000000000
+    add
+    push2 0x0122
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    push0
+    sub
+    dup3
+    push1 0x1b
+    add
+    calldataload
+    dup4
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    swap1
+    push1 0x49
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+
+_jump_dest_unknown_001af0:
+    __tablesize(table_5168)
+    __tablestart(table_5168)
+    push0
+    codecopy
+    caller
+    push1 0x04
+    mstore
+    push1 0x04
+    calldataload
+    dup1
+    iszero
+    push2 0x1b13
+    jumpi
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x84
+    calldataload
+    gas
+    call
+
+_jump_dest_unknown_001b13:
+    push1 0x24
+    calldataload
+    dup1
+    iszero
+    push1 0xfd
+    jumpi
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0xa4
+    calldataload
+    gas
+    call
+    stop
+    extcodecopy
+    dup11
+    push30 0x8d0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    log0
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push3 0x000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    byte
+    create
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001c80:
+    __tablesize(table_5520)
+    __tablestart(table_5520)
+    push0
+    codecopy
+    dup1
+    chainid
+    add
+    calldataload
+    push1 0xe8
+    shr
+    push1 0x02
+    signextend
+    push1 0x24
+    mstore
+    dup1
+    push1 0x04
+    add
+    calldataload
+    push1 0xe8
+    shr
+    push1 0x02
+    signextend
+    push1 0x44
+    mstore
+    push1 0x04
+    dup2
+    push1 0x08
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push32 0x1af0000000000000000000000000000000000000000000000000000000000000
+    push2 0x0124
+    mstore
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    push1 0x48
+    dup7
+    sub
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    dup3
+    push1 0x0d
+    add
+    calldataload
+    dup4
+    push1 0x0c
+    add
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    push1 0x20
+    mload
+    dup4
+    push1 0x12
+    add
+    calldataload
+    dup5
+    push1 0x11
+    add
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    and
+    swap1
+    push1 0x16
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    log3
+    coinbase
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    selfdestruct
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_001e00:
+    __tablesize(table_5834)
+    __tablestart(table_5834)
+    push1 0x20
+    codecopy
+    dup1
+    push1 0x15
+    add
+    calldataload
+    push1 0xe8
+    shr
+    push1 0x02
+    signextend
+    push1 0x24
+    mstore
+    dup1
+    push1 0x18
+    add
+    calldataload
+    push1 0xe8
+    shr
+    push1 0x02
+    signextend
+    push1 0x44
+    mstore
+    push1 0x04
+    dup2
+    push1 0x1c
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup1
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0x40
+    push0
+    push1 0xa4
+    push0
+    push0
+    push0
+    push0
+    push1 0x64
+    push1 0x20
+    push0
+    dup11
+    gas
+    call
+    swap6
+    __tablesize(table_5889)
+    __tablestart(table_5889)
+    push0
+    codecopy
+    push16 0xffffffffffffffffffffffffffffffff
+    push1 0x64
+    mstore
+    gas
+    call
+    and
+    push0
+    mload
+    dup3
+    push1 0x21
+    add
+    calldataload
+    dup4
+    push1 0x20
+    add
+    calldataload
+    push0
+    byte
+    shr
+    dup1
+    iszero
+    swap2
+    gt
+    or
+    and
+    push1 0x20
+    mload
+    dup3
+    push1 0x26
+    add
+    calldataload
+    dup4
+    push1 0x25
+    add
+    calldataload
+    push0
+    byte
+    shr
+    dup1
+    iszero
+    swap2
+    gt
+    or
+    and
+    swap1
+    push1 0x2a
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    selfdestruct
+    tload
+    push10 0xbee701ef814a2b6a3edd
+    stop
+    and
+    mstore
+    stop
+    swap13
+    stop
+    stop
+    push16 0x00000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    swap7
+    stop
+    stop
+    timestamp
+    push24 0x198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da3
+    basefee
+    dup5
+    push0
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// univ2 token -> weth
+// example: https://etherscan.io/tx/0xe952bd1a30235ca6c4cd7411cb04603b17be968a30d2ee08e0d72531e023ed01
+_jump_dest_univ2_token_weth_other_001f00:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    push1 0x60
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x02
+    calldataload
+    dup1
+    push0
+    mstore
+    push32 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000
+    push1 0x14
+    mstore
+    push1 0x28
+    push0
+    sha3
+    __tablesize(table_6016)
+    __tablestart(table_6016)
+    push0
+    codecopy
+    push1 0x15
+    mstore
+    push1 0x55
+    push0
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    __tablesize(table_6027)
+    __tablestart(table_6027)
+    push0
+    codecopy
+    dup1
+    push1 0x04
+    mstore
+    swap7
+    shr
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    pop
+    __tablesize(table_6046)
+    __tablestart(table_6046)
+    push0
+    codecopy
+    callvalue
+    push1 0x21
+    mstore
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+//  univ3 liq + swap
+// example: https://etherscan.io/tx/0xe235466395c4b549e6697a6d5bab3fcc4ed0deaec041eddbcbb4256b9c1c2e8b
+_jump_dest_univ3_liq_swap_001fc0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    push1 0x60
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x02
+    calldataload
+    dup1
+    push0
+    mstore
+    push32 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000
+    push1 0x14
+    mstore
+    push1 0x28
+    push0
+    sha3
+    __tablesize(table_6135)
+    __tablestart(table_6135)
+    push0
+    codecopy
+    push1 0x15
+    mstore
+    push1 0x55
+    push0
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    __tablesize(table_6146)
+    __tablestart(table_6146)
+    push0
+    codecopy
+    dup1
+    push1 0x04
+    mstore
+    swap7
+    shr
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    pop
+    __tablesize(table_6165)
+    __tablestart(table_6165)
+    push0
+    codecopy
+    callvalue
+    push1 0x21
+    mstore
+    gas
+    call
+    push1 0x1a
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// uniswap v2 TOKEN -> WETH
+// example: https://etherscan.io/tx/0xe98f6d05e578f40d803f1e42f088d5d3a85b1fe761c74bce44f5a20185145eca
+_jump_dest_univ2_token_weth_other2_002080:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    push1 0x60
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x02
+    calldataload
+    dup1
+    push32 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000
+    push0
+    mstore
+    push1 0x14
+    mstore
+    push1 0x28
+    push0
+    sha3
+    __tablesize(table_6253)
+    __tablestart(table_6253)
+    push0
+    codecopy
+    push1 0x15
+    mstore
+    push1 0x55
+    push0
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    __tablesize(table_6264)
+    __tablestart(table_6264)
+    push0
+    codecopy
+    dup1
+    push1 0x04
+    mstore
+    swap7
+    shr
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    pop
+    __tablesize(table_6283)
+    __tablestart(table_6283)
+    push1 0x04
+    codecopy
+    callvalue
+    chainid
+    mstore
+    __tablesize(table_6290)
+    __tablestart(table_6290)
+    push0
+    codecopy
+    gas
+    call
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+// arb univ2 token -> token
+// example: https://etherscan.io/tx/0xfd0e326c17956bee753b63ebcc45ced4bbdd7dd38cd9d38881ca4e80f8b99167
+_jump_dest_univ2_token_token_002140:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    push1 0x60
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    push1 0x02
+    calldataload
+    dup1
+    push32 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000
+    push0
+    mstore
+    push1 0x14
+    mstore
+    push1 0x28
+    push0
+    sha3
+    __tablesize(table_6370)
+    __tablestart(table_6370)
+    push0
+    codecopy
+    push1 0x15
+    mstore
+    push1 0x55
+    push0
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    __tablesize(table_6381)
+    __tablestart(table_6381)
+    push0
+    codecopy
+    dup1
+    push1 0x04
+    mstore
+    swap7
+    shr
+    push1 0x04
+    push1 0x16
+    chainid
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    pop
+    __tablesize(table_6400)
+    __tablestart(table_6400)
+    push1 0x04
+    codecopy
+    callvalue
+    chainid
+    mstore
+    __tablesize(table_6407)
+    __tablestart(table_6407)
+    push0
+    codecopy
+    gas
+    call
+    push1 0x1a
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002200:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    push1 0x60
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup12
+    push1 0x02
+    add
+    calldataload
+    dup1
+    push32 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000
+    push0
+    mstore
+    push1 0x14
+    mstore
+    push1 0x28
+    push0
+    sha3
+    __tablesize(table_6488)
+    __tablestart(table_6488)
+    push0
+    codecopy
+    push1 0x15
+    mstore
+    push1 0x55
+    push0
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    __tablesize(table_6499)
+    __tablestart(table_6499)
+    push0
+    codecopy
+    dup1
+    push1 0x04
+    mstore
+    swap7
+    shr
+    push1 0x04
+    dup14
+    push1 0x16
+    add
+    dup15
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    pop
+    __tablesize(table_6522)
+    __tablestart(table_6522)
+    push0
+    codecopy
+    push1 0x04
+    dup8
+    push1 0x1b
+    add
+    dup9
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    swap1
+    push1 0x1f
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_0022c0:
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    push1 0x60
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup12
+    push1 0x02
+    add
+    calldataload
+    dup1
+    push0
+    mstore
+    push32 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000
+    push1 0x14
+    mstore
+    push1 0x28
+    push0
+    sha3
+    __tablesize(table_6604)
+    __tablestart(table_6604)
+    push0
+    codecopy
+    push1 0x15
+    mstore
+    push1 0x55
+    push0
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    __tablesize(table_6615)
+    __tablestart(table_6615)
+    push0
+    codecopy
+    dup1
+    push1 0x04
+    mstore
+    swap7
+    shr
+    push1 0x04
+    dup14
+    push1 0x16
+    add
+    dup15
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    pop
+    __tablesize(table_6638)
+    __tablestart(table_6638)
+    push0
+    codecopy
+    push1 0x04
+    dup8
+    push1 0x1b
+    add
+    dup9
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    gas
+    call
+    swap1
+    push1 0x1f
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002380:
+    __tablesize(table_6696)
+    __tablestart(table_6696)
+    push0
+    codecopy
+    dup1
+    push1 0x15
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xc4
+    mstore
+    dup1
+    push1 0x29
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xe4
+    mstore
+    dup1
+    push1 0x3d
+    add
+    calldataload
+    push1 0xf0
+    shr
+    push2 0x0104
+    mstore
+    dup1
+    push1 0x3f
+    add
+    calldataload
+    push1 0xe8
+    shr
+    push1 0x02
+    signextend
+    push1 0x24
+    mstore
+    dup1
+    push1 0x42
+    add
+    calldataload
+    push1 0xe8
+    shr
+    push1 0x02
+    signextend
+    push1 0x44
+    mstore
+    push1 0x04
+    dup2
+    push1 0x46
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    dup3
+    push1 0x4b
+    add
+    calldataload
+    dup4
+    push1 0x4a
+    add
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    push1 0x20
+    mload
+    dup3
+    push1 0x50
+    add
+    calldataload
+    dup4
+    push1 0x4f
+    add
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    swap1
+    push1 0x54
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002440:
+    __tablesize(table_6853)
+    __tablestart(table_6853)
+    push0
+    codecopy
+    caller
+    push1 0x64
+    mstore
+    push1 0xe6
+    calldataload
+    push1 0xe4
+    mstore
+    push1 0x04
+    push2 0x011b
+    push2 0x011a
+    calldataload
+    push0
+    byte
+    push1 0xa4
+    add
+    calldatacopy
+    push2 0x0106
+    calldataload
+    push1 0x60
+    shr
+    push2 0x0124
+    mstore
+    push1 0x84
+    calldataload
+    push2 0x0144
+    mstore
+    push1 0x04
+    calldataload
+    push2 0x0164
+    mstore
+    push0
+    push0
+    push2 0x01c4
+    push0
+    push0
+    push20 0xba12222222228d8ba445958a75a0704d566bf2c8
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_0024c0:
+    __tablesize(table_6935)
+    __tablestart(table_6935)
+    push0
+    codecopy
+    caller
+    push1 0x64
+    mstore
+    push1 0xe6
+    calldataload
+    push1 0xe4
+    mstore
+    push1 0x04
+    push2 0x011b
+    push2 0x011a
+    calldataload
+    push0
+    byte
+    push1 0xa4
+    add
+    calldatacopy
+    push2 0x0106
+    calldataload
+    push1 0x60
+    shr
+    push2 0x0124
+    mstore
+    push1 0xa4
+    calldataload
+    push2 0x0144
+    mstore
+    push1 0x24
+    calldataload
+    push2 0x0164
+    mstore
+    push0
+    push0
+    push2 0x01c4
+    push0
+    push0
+    push20 0xba12222222228d8ba445958a75a0704d566bf2c8
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002540:
+    __tablesize(table_7017)
+    __tablestart(table_7017)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup1
+    push1 0x1a
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xc4
+    mstore
+    dup1
+    push1 0x2e
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xe4
+    mstore
+    dup1
+    push1 0x42
+    add
+    calldataload
+    push1 0xf0
+    shr
+    push2 0x0104
+    mstore
+    dup1
+    push1 0x44
+    add
+    calldataload
+    push1 0xf0
+    shr
+    dup1
+    dup1
+    push1 0xa4
+    mstore
+    dup3
+    push1 0x46
+    add
+    calldataload
+    push0
+    byte
+    push1 0xf6
+    shl
+    push2 0x0124
+    mstore
+    push1 0x62
+    swap1
+    sub
+    dup3
+    push1 0x47
+    add
+    push2 0x0126
+    calldatacopy
+    push1 0x40
+    push0
+    dup3
+    push1 0xc4
+    add
+    push0
+    push0
+    dup7
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push1 0x20
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    swap2
+    add
+    push1 0x1b
+    swap1
+    sub
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002600:
+    push1 0xe6
+    dup1
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jump
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002640:
+    __tablesize(table_7236)
+    __tablestart(table_7236)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup1
+    push1 0x1a
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xc4
+    mstore
+    dup1
+    push1 0x2e
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xe4
+    mstore
+    dup1
+    push1 0x42
+    add
+    calldataload
+    push1 0xf0
+    shr
+    push2 0x0104
+    mstore
+    dup1
+    push1 0x44
+    add
+    calldataload
+    push1 0xf0
+    shr
+    dup1
+    dup1
+    push1 0x19
+    dup5
+    dup3
+    add
+    sub
+    calldataload
+    push1 0x60
+    shr
+    push1 0x04
+    mstore
+    push1 0xa4
+    mstore
+    dup3
+    push1 0x46
+    add
+    calldataload
+    push0
+    byte
+    push1 0xf6
+    shl
+    push2 0x0124
+    mstore
+    push1 0x62
+    swap1
+    sub
+    dup3
+    push1 0x47
+    add
+    push2 0x0126
+    calldatacopy
+    push1 0x40
+    push0
+    dup3
+    push1 0xc4
+    add
+    push0
+    push0
+    dup7
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push1 0x20
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    swap2
+    add
+    push1 0x1b
+    swap1
+    sub
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002700:
+    __tablesize(table_7390)
+    __tablestart(table_7390)
+    push0
+    codecopy
+    caller
+    push1 0x04
+    mstore
+    push1 0x24
+    calldataload
+    push0
+    byte
+    iszero
+    push1 0x05
+    shl
+    push1 0x04
+    add
+    calldataload
+    push0
+    sub
+    push1 0x44
+    mstore
+    push1 0xfa
+    calldataload
+    push1 0x60
+    shr
+    push1 0xc4
+    mstore
+    push2 0x010e
+    calldataload
+    push1 0x60
+    shr
+    push1 0xe4
+    mstore
+    push2 0x0122
+    calldataload
+    push1 0xf0
+    shr
+    push2 0x0104
+    mstore
+    push0
+    push0
+    push2 0x0124
+    calldataload
+    push1 0xf0
+    shr
+    push1 0x61
+    dup2
+    dup1
+    push1 0xa4
+    mstore
+    push2 0x0126
+    calldataload
+    push0
+    byte
+    push1 0xf6
+    shl
+    push2 0x0124
+    mstore
+    sub
+    push2 0x0127
+    push2 0x0126
+    calldatacopy
+    push1 0xc4
+    add
+    push0
+    push0
+    push1 0xe6
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002780:
+    __tablesize(table_7480)
+    __tablestart(table_7480)
+    push0
+    codecopy
+    caller
+    push1 0x04
+    mstore
+    push1 0x24
+    calldataload
+    push0
+    byte
+    iszero
+    push1 0x05
+    shl
+    push1 0x04
+    add
+    calldataload
+    push0
+    sub
+    push1 0x44
+    mstore
+    push1 0x14
+    push1 0xff
+    push1 0xd0
+    calldatacopy
+    push1 0x14
+    push2 0x0113
+    push1 0xf0
+    calldatacopy
+    push2 0x16a2
+    push2 0x0106
+    mstore
+    push1 0x02
+    push2 0x0127
+    push2 0x0122
+    calldatacopy
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    push1 0xe6
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    push1 0xfb
+    calldataload
+    push1 0xfa
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002800:
+    __tablesize(table_7575)
+    __tablestart(table_7575)
+    push0
+    codecopy
+    push1 0x04
+    calldataload
+    dup2
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    mstore
+    caller
+    push1 0x44
+    mstore
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002840:
+    __tablesize(table_7632)
+    __tablestart(table_7632)
+    push0
+    codecopy
+    push1 0x24
+    calldataload
+    dup2
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    mstore
+    caller
+    push1 0x44
+    mstore
+    push0
+    push0
+    push1 0xa4
+    push0
+    push0
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002880:
+    __tablesize(table_7689)
+    __tablestart(table_7689)
+    push0
+    codecopy
+    caller
+    push1 0x04
+    mstore
+    push1 0x24
+    calldataload
+    push0
+    byte
+    iszero
+    push1 0x05
+    shl
+    push1 0x04
+    add
+    calldataload
+    push0
+    sub
+    push1 0x44
+    mstore
+    push1 0xfa
+    calldataload
+    push1 0x60
+    shr
+    push1 0xc4
+    mstore
+    push2 0x010e
+    calldataload
+    push1 0x60
+    shr
+    push1 0xe4
+    mstore
+    push2 0x0122
+    calldataload
+    push1 0xf0
+    shr
+    push2 0x0104
+    mstore
+    push0
+    push0
+    push2 0x0124
+    calldataload
+    push1 0xf0
+    shr
+    push1 0x61
+    dup2
+    dup1
+    push1 0xa4
+    mstore
+    push2 0x0126
+    calldataload
+    push0
+    byte
+    push1 0xf6
+    shl
+    push2 0x0124
+    mstore
+    sub
+    push2 0x0127
+    push2 0x0126
+    calldatacopy
+    push1 0xc4
+    add
+    push0
+    push0
+    push1 0xe6
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002900:
+    __tablesize(table_7779)
+    __tablestart(table_7779)
+    push0
+    codecopy
+    caller
+    push1 0x04
+    mstore
+    push1 0x24
+    calldataload
+    push0
+    byte
+    iszero
+    push1 0x05
+    shl
+    push1 0x04
+    add
+    calldataload
+    push0
+    sub
+    push1 0x44
+    mstore
+    push1 0x14
+    push1 0xff
+    push1 0xd0
+    calldatacopy
+    push1 0x14
+    push2 0x0113
+    push1 0xf0
+    calldatacopy
+    push2 0x16c1
+    push2 0x0106
+    mstore
+    push1 0x02
+    push2 0x0127
+    push2 0x0122
+    calldatacopy
+    push1 0x40
+    push0
+    push2 0x0126
+    push0
+    push0
+    push1 0xe6
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push1 0x20
+    mload
+    push1 0xfb
+    calldataload
+    push1 0xfa
+    calldataload
+    push0
+    byte
+    shr
+    gt
+    and
+    push1 0xfd
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002980:
+    __tablesize(table_7873)
+    __tablestart(table_7873)
+    push0
+    codecopy
+    push32 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    push1 0x44
+    mstore
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup1
+    push1 0x1a
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xc4
+    mstore
+    dup1
+    push1 0x2e
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xe4
+    mstore
+    dup1
+    push1 0x42
+    add
+    calldataload
+    push1 0xf0
+    shr
+    push2 0x0104
+    mstore
+    dup1
+    push1 0x44
+    add
+    calldataload
+    push1 0xf0
+    shr
+    dup1
+    dup1
+    push1 0xa4
+    mstore
+    dup3
+    push1 0x46
+    add
+    calldataload
+    push0
+    byte
+    push1 0xf6
+    shl
+    push2 0x0124
+    mstore
+    push1 0x62
+    swap1
+    sub
+    dup3
+    push1 0x47
+    add
+    push2 0x0126
+    calldatacopy
+    push1 0x40
+    push0
+    dup3
+    push1 0xc4
+    add
+    push0
+    push0
+    dup7
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    swap2
+    add
+    push1 0x1b
+    swap1
+    sub
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002a40:
+    __tablesize(table_7998)
+    __tablestart(table_7998)
+    push0
+    codecopy
+    push32 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    push1 0x44
+    mstore
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    dup1
+    push1 0x1a
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xc4
+    mstore
+    dup1
+    push1 0x2e
+    add
+    calldataload
+    push1 0x60
+    shr
+    push1 0xe4
+    mstore
+    dup1
+    push1 0x42
+    add
+    calldataload
+    push1 0xf0
+    shr
+    push2 0x0104
+    mstore
+    dup1
+    push1 0x44
+    add
+    calldataload
+    push1 0xf0
+    shr
+    dup1
+    dup1
+    push1 0x19
+    dup5
+    dup3
+    add
+    sub
+    calldataload
+    push1 0x60
+    shr
+    push1 0x04
+    mstore
+    push1 0xa4
+    mstore
+    dup3
+    push1 0x46
+    add
+    calldataload
+    push0
+    byte
+    push1 0xf6
+    shl
+    push2 0x0124
+    mstore
+    push1 0x62
+    swap1
+    sub
+    dup3
+    push1 0x47
+    add
+    push2 0x0126
+    calldatacopy
+    push1 0x40
+    push0
+    dup3
+    push1 0xc4
+    add
+    push0
+    push0
+    dup7
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    push1 0x44
+    mload
+    eq
+    and
+    swap2
+    add
+    push1 0x1b
+    swap1
+    sub
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002b00:
+    __tablesize(table_8120)
+    __tablestart(table_8120)
+    push0
+    codecopy
+    push0
+    push0
+    push1 0x04
+    push0
+    dup5
+    push1 0x02
+    add
+    calldataload
+    dup6
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    shr
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    swap1
+    push1 0x06
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+
+_jump_dest_unknown_002b40:
+    __tablesize(table_8157)
+    __tablestart(table_8157)
+    push0
+    codecopy
+    push1 0x04
+    dup2
+    push1 0x02
+    add
+    dup3
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x24
+    push0
+    push0
+    push20 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+    gas
+    call
+    swap1
+    push1 0x06
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002bc0:
+    __tablesize(table_8257)
+    __tablestart(table_8257)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x16
+    add
+    push1 0x10
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x15
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002c00:
+    __tablesize(table_8311)
+    __tablestart(table_8311)
+    push0
+    codecopy
+    push1 0x14
+    dup2
+    push1 0x16
+    add
+    push1 0x10
+    calldatacopy
+    push0
+    push1 0x24
+    mstore
+    push1 0x04
+    dup2
+    push1 0x2b
+    add
+    push1 0x20
+    dup4
+    push1 0x2a
+    add
+    calldataload
+    push0
+    byte
+    sub
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x15
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    returndatasize
+    create
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002cc9:
+    coinbase
+    stop
+    addmod
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002d80:
+    __tablesize(table_8680)
+    __tablestart(table_8680)
+    push0
+    codecopy
+    dup1
+    push1 0x1f
+    add
+    calldataload
+    dup1
+    push0
+    byte
+    push1 0x04
+    mstore
+    chainid
+    byte
+    push1 0x24
+    mstore
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x1b
+    add
+    dup3
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x84
+    push0
+    dup5
+    push1 0x21
+    add
+    calldataload
+    push0
+    byte
+    push1 0x44
+    mload
+    mul
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x22
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002e00:
+    __tablesize(table_8790)
+    __tablestart(table_8790)
+    push0
+    codecopy
+    dup1
+    push1 0x1f
+    add
+    calldataload
+    dup1
+    push0
+    byte
+    push1 0x04
+    mstore
+    chainid
+    byte
+    push1 0x24
+    mstore
+    push1 0x04
+    dup2
+    push1 0x16
+    add
+    dup3
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x04
+    dup2
+    push1 0x1b
+    add
+    dup3
+    push1 0x1a
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x84
+    push0
+    dup5
+    push1 0x21
+    add
+    calldataload
+    push0
+    byte
+    push1 0x44
+    mload
+    mul
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap1
+    push1 0x22
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    push29 0xe706000000000000000000000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push1 0x00
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    dup14
+    stop
+    push20 0x3300000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push1 0x00
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push1 0x15
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    swap4
+    create2
+    swap11
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    push12 0x75d8af000000e20b7a7ddf00
+    signextend
+    stop
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_002fc0:
+    __tablesize(table_9144)
+    __tablestart(table_9144)
+    push0
+    codecopy
+    dup1
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    dup2
+    push1 0x15
+    add
+    calldataload
+    push1 0x60
+    shr
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup6
+    gas
+    call
+    pop
+    __tablesize(table_9172)
+    __tablestart(table_9172)
+    push0
+    codecopy
+    push1 0x04
+    dup4
+    push1 0x2a
+    add
+    dup5
+    push1 0x29
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push1 0x04
+    dup4
+    push1 0x2f
+    add
+    dup5
+    push1 0x2e
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x84
+    push0
+    push0
+    dup7
+    gas
+    call
+    __tablesize(table_9206)
+    __tablestart(table_9206)
+    push0
+    codecopy
+    dup3
+    push1 0x04
+    mstore
+    push0
+    push1 0x24
+    mstore
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup7
+    gas
+    call
+    and
+    swap2
+    pop
+    pop
+    swap1
+    push1 0x33
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_003040:
+    __tablesize(table_9246)
+    __tablestart(table_9246)
+    push0
+    codecopy
+    dup1
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push1 0x24
+    mstore
+    push1 0x04
+    dup3
+    push1 0x2a
+    add
+    dup4
+    push1 0x29
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup7
+    push1 0x15
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    __tablesize(table_9287)
+    __tablestart(table_9287)
+    push1 0x20
+    codecopy
+    __tablesize(table_9291)
+    __tablestart(table_9291)
+    push1 0x44
+    codecopy
+    push1 0x04
+    dup3
+    push1 0x2f
+    add
+    dup4
+    push1 0x2e
+    add
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x84
+    push1 0x20
+    push0
+    dup6
+    gas
+    call
+    swap1
+    pop
+    swap1
+    push1 0x33
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_0030c0:
+    __tablesize(table_9347)
+    __tablestart(table_9347)
+    push0
+    codecopy
+    push1 0x20
+    push0
+    push1 0x24
+    push0
+    push0
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    dup3
+    push1 0x16
+    add
+    calldataload
+    dup4
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    swap1
+    push1 0x1a
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_003100:
+    __tablesize(table_9401)
+    __tablestart(table_9401)
+    push0
+    codecopy
+    push1 0x20
+    push0
+    push1 0x24
+    push0
+    push0
+    dup6
+    push1 0x02
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    push0
+    mload
+    dup3
+    push1 0x16
+    add
+    calldataload
+    dup4
+    chainid
+    add
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    swap1
+    push1 0x1a
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    push17 0xa082310000000000000000000000006b75
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    signextend
+    push27 0x7ddf000ba900b4009a800000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_003180:
+    __tablesize(table_9475)
+    __tablestart(table_9475)
+    push0
+    codecopy
+    push1 0x20
+    push0
+    push1 0x24
+    push0
+    dup5
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    staticcall
+    push0
+    mload
+    dup3
+    push1 0x16
+    add
+    calldataload
+    dup4
+    push1 0x15
+    add
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    swap1
+    push1 0x1a
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    shl
+    dup14
+    push27 0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba9
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    selfdestruct
+    revert
+    dup10
+    push4 0xefd1fc6a
+    pop
+    push5 0x88495d951d
+    mstore
+    push4 0x988d2500
+    stop
+    shl
+    dup14
+    push27 0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba9
+    stop
+    stop
+    stop
+    swap11
+    dup1
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    add
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    add
+    stop
+    mul
+    push23 0xa400000000000000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_003300:
+    __tablesize(table_9759)
+    __tablestart(table_9759)
+    push0
+    codecopy
+    push1 0x40
+    push0
+    push1 0x84
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push1 0x24
+    mstore
+    push1 0x04
+    dup8
+    push1 0x2a
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup12
+    push1 0x15
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    push1 0x24
+    mload
+    __tablesize(table_9807)
+    __tablestart(table_9807)
+    push0
+    codecopy
+    push1 0x44
+    mstore
+    gas
+    call
+    push0
+    mload
+    push0
+    sub
+    dup3
+    push1 0x2f
+    add
+    calldataload
+    dup4
+    push1 0x2e
+    add
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    swap1
+    push1 0x33
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_003380:
+    __tablesize(table_9865)
+    __tablestart(table_9865)
+    push0
+    codecopy
+    push1 0x40
+    push0
+    push1 0x84
+    push0
+    push0
+    dup6
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    dup1
+    push1 0x04
+    mstore
+    push0
+    push1 0x24
+    mstore
+    push1 0x04
+    dup8
+    push1 0x2a
+    add
+    chainid
+    dup2
+    sub
+    calldataload
+    push0
+    byte
+    calldatacopy
+    push0
+    push0
+    push1 0x44
+    push0
+    push0
+    dup12
+    push1 0x15
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    pop
+    push1 0x24
+    mload
+    __tablesize(table_9913)
+    __tablestart(table_9913)
+    push0
+    codecopy
+    push1 0x44
+    mstore
+    gas
+    call
+    push1 0x20
+    mload
+    push0
+    sub
+    dup3
+    push1 0x2f
+    add
+    calldataload
+    dup4
+    push1 0x2e
+    add
+    calldataload
+    push0
+    byte
+    shr
+    lt
+    and
+    swap1
+    push1 0x33
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+
+_jump_dest_unknown_003400:
+    dup1
+    push1 0x15
+    add
+    calldataload
+    push1 0xf0
+    shr
+    dup1
+    dup3
+    push1 0x17
+    add
+    push0
+    calldatacopy
+    push0
+    push0
+    dup3
+    push0
+    push0
+    dup7
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap2
+    add
+    push1 0x17
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+
+// univ3 callback
+_jump_dest_univ3_callback_00342f:
+    origin
+    push20 0xae2fc483527b8ef99eb5d9b44875f005ba1fae13
+    eq
+    push1 0x60
+    push1 0x84
+    push0
+    calldatacopy
+    push1 0x60
+    push0
+    sha3
+    push21 0xff1f98431c8ad98523631ae4a59f267346ea31f984
+    push0
+    mstore
+    push1 0x20
+    mstore
+    push32 0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54
+    push1 0x40
+    mstore
+    push1 0x55
+    push1 0x0b
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    caller
+    eq
+    and
+    push1 0xe4
+    calldataload
+    push1 0xf0
+    shr
+    jumpi
+    push21 0xff41ff9aa7e16b8b1a8a8dc4f0efacd93d02d071c9
+    push0
+    mstore
+    push32 0x6ce8eb472fa82df5469c6ab6d485f17c3ad13c8cd7af59b3d4a8026c5ce0f7e2
+    push1 0x40
+    mstore
+    push1 0x55
+    push1 0x0b
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    caller
+    eq
+    origin
+    push20 0xae2fc483527b8ef99eb5d9b44875f005ba1fae13
+    eq
+    and
+    push1 0xe4
+    calldataload
+    push1 0xf0
+    shr
+    jumpi
+    push21 0xffbaceb8ec6b9355dfc0269c18bac9d6e2bdc29c4f
+    push0
+    mstore
+    push32 0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54
+    push1 0x40
+    mstore
+    push1 0x55
+    push1 0x0b
+    sha3
+    push20 0xffffffffffffffffffffffffffffffffffffffff
+    and
+    caller
+    eq
+    push20 0xae2fc483527b8ef99eb5d9b44875f005ba1fae13
+    origin
+    eq
+    and
+    push1 0xe4
+    calldataload
+    push1 0xf0
+    shr
+    jumpi
+    stop
+}
+// transferFrom(address,address,uint256)
+#define table table_227 {
+    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_250 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transferFrom(address,address,uint256)
+#define table table_467 {
+    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_490 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transferFrom(address,address,uint256)
+#define table table_560 {
+    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_593 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transfer(address,uint256)
+#define table table_651 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_674 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_745 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_768 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_838 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_871 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transfer(address,uint256)
+#define table table_929 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_952 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_1023 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1046 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_1116 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1149 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transfer(address,uint256)
+#define table table_1207 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1237 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_1319 {
+    0xa9059cbb
+}
+
+#define table table_1349 {
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000000000000000000000000000000000000000000080
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1356 {
+    0x022c0d9f
+}
+
+// transfer(address,uint256)
+#define table table_1429 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1459 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_1540 {
+    0xa9059cbb
+}
+
+#define table table_1570 {
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000000000000000000000000000000000000000000080
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1577 {
+    0x022c0d9f
+}
+
+// transfer(address,uint256)
+#define table table_1649 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1687 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transfer(address,uint256)
+#define table table_1758 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1788 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_1870 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_1900 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_1981 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_2011 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_2092 {
+    0xa9059cbb
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_2122 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+// transfer(address,uint256)
+#define table table_2230 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// withdraw(uint256)
+#define table table_2284 {
+    0x2e1a7d4d
+}
+
+// transferFrom(address,address,uint256)
+#define table table_2384 {
+    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transfer(address,uint256)
+#define table table_2481 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transfer(address,uint256)
+#define table table_2578 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_2675 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_2730 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// approve(address,uint256)
+#define table table_3312 {
+    0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
+    0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff
+}
+
+// approve(address,uint256)
+#define table table_3369 {
+    0x095ea7b3
+}
+
+// swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
+#define table table_3422 {
+    0x52bbbe2900000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000ff000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000100000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000c000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
+#define table table_3504 {
+    0x52bbbe2900000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000ff000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000100000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000c000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// approve(address,uint256)
+#define table table_3583 {
+    0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
+    0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff
+}
+
+// swapExactAmountOut(address,uint256,address,uint256,uint256)
+#define table table_3800 {
+    0x7c5e9ea400000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000ff000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transferFrom(address,address,uint256)
+#define table table_4300 {
+    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+// transferFrom(address,address,uint256)
+#define table table_4322 {
+    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_4405 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_4483 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2
+}
+
+// transfer(address,uint256)
+#define table table_4532 {
+    0xa9059cbb
+}
+
+// transfer(address,uint256)
+#define table table_4555 {
+    0xa9059cbb
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_4610 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_4689 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_4766 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_4871 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_4973 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_5080 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// transfer(address,uint256)
+#define table table_5168 {
+    0xa9059cbb
+}
+
+// mint(address,int24,int24,uint128,bytes)
+#define table table_5520 {
+    0x3c8a7d8d0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// burn(int24,int24,uint128)
+#define table table_5834 {
+    0xa34123a700000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000ffffffffffffffffffffffff
+    0xffffffff
+}
+
+// collect(address,int24,int24,uint128,uint128)
+#define table table_5889 {
+    0x4f1eb3d80000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+#define table table_6016 {
+    0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
+    0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
+    0x478aa9a39f403cb768dd02cbee326c3e7da348845f
+}
+
+// transfer(address,uint256)
+#define table table_6027 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_6046 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+#define table table_6135 {
+    0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
+    0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
+    0x478aa9a39f403cb768dd02cbee326c3e7da348845f
+}
+
+// transfer(address,uint256)
+#define table table_6146 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_6165 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000080
+}
+
+#define table table_6253 {
+    0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
+    0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
+    0x478aa9a39f403cb768dd02cbee326c3e7da348845f
+}
+
+// transfer(address,uint256)
+#define table table_6264 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+#define table table_6283 {
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000000000000000000000000000000000000000000080
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_6290 {
+    0x022c0d9f
+}
+
+#define table table_6370 {
+    0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
+    0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
+    0x478aa9a39f403cb768dd02cbee326c3e7da348845f
+}
+
+// transfer(address,uint256)
+#define table table_6381 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+#define table table_6400 {
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000000000000000000000000000000000000000000080
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_6407 {
+    0x022c0d9f
+}
+
+#define table table_6488 {
+    0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
+    0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
+    0x478aa9a39f403cb768dd02cbee326c3e7da348845f
+}
+
+// transfer(address,uint256)
+#define table table_6499 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_6522 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+#define table table_6604 {
+    0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
+    0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
+    0x478aa9a39f403cb768dd02cbee326c3e7da348845f
+}
+
+// transfer(address,uint256)
+#define table table_6615 {
+    0xa9059cbb00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_6638 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// mint(address,int24,int24,uint128,bytes)
+#define table table_6696 {
+    0x3c8a7d8d0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x0000006200000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000001af0
+}
+
+// swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
+#define table table_6853 {
+    0x52bbbe2900000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000ff000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000100000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000c000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
+#define table table_6935 {
+    0x52bbbe2900000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000ff000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000100000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000c000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7017 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7236 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7390 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7480 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff00000000000000000000000000000000000000000000000000000001
+    0x000276a400000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_7575 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(uint256,uint256,address,bytes)
+#define table table_7632 {
+    0x022c0d9f00000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000008000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7689 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7779 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7873 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// swap(address,bool,int256,uint160,bytes)
+#define table table_7998 {
+    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d2500000000000000000000000000000000000000000000000000000000
+    0x000000a000000000000000000000000000000000000000000000000000000000
+    0x00000062000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc2000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead908
+    0x3c756cc200000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// deposit()
+#define table table_8120 {
+    0xd0e30db0
+}
+
+// withdraw(uint256)
+#define table table_8157 {
+    0x2e1a7d4d00000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// approve(address,uint256)
+#define table table_8257 {
+    0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
+    0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff
+}
+
+// approve(address,uint256)
+#define table table_8311 {
+    0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
+}
+
+// exchange(int128,int128,uint256,uint256)
+#define table table_8680 {
+    0x3df0212400000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// exchange(uint256,uint256,uint256,uint256)
+#define table table_8790 {
+    0x5b41b90800000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// approve(address,uint256)
+#define table table_9144 {
+    0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
+    0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    0xffffffff
+}
+
+// buyBaseToken(uint256,uint256,bytes)
+#define table table_9172 {
+    0xe67ce70600000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000006000000000000000000000000000000000000000000000000000000000
+    0x00000000
+}
+
+// approve(address,uint256)
+#define table table_9206 {
+    0x095ea7b3
+}
+
+// approve(address,uint256)
+#define table table_9246 {
+    0x095ea7b3
+}
+
+// sellBaseToken(uint256,uint256,bytes)
+#define table table_9287 {
+    0x8dae7333
+}
+
+#define table table_9291 {
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000060
+    0x0000000000000000000000000000000000000000000000000000000000000000
+}
+
+// sellBase(address)
+#define table table_9347 {
+    0xbd6015b40000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+// sellQuote(address)
+#define table table_9401 {
+    0xdd93f59a0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+// balanceOf(address)
+#define table table_9475 {
+    0x70a082310000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a80
+}
+
+// approve(address,uint256)
+#define table table_9759 {
+    0x095ea7b3
+}
+
+#define table table_9807 {
+    0xc31b8d7a0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000000
+    0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
+    0x63988d25
+}
+
+// approve(address,uint256)
+#define table table_9865 {
+    0x095ea7b3
+}
+
+#define table table_9913 {
+    0xc31b8d7a0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
+    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x0000000100000000000000000000000000000000000000000000000000000000
+    0x0000000000000000000000000000000000000000000000000000000000000001
+    0x000276a4
+}
