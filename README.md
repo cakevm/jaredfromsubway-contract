@@ -35,7 +35,7 @@ test/
 
 
 ### Run
-In the test you can modify if the Huff version or the original constructor should be used.
+In the test you can modify if the Huff or the deployed contract version should be used. The tests require an archive node.
 ```shell
 export ETH_MAINNET_HTTP=<RPC PROVIDER>
 forge test
