@@ -2,7 +2,7 @@
     callvalue
     push1 0xff
     and
-    number
+    number // manually changed from: timestamp
     push1 0xff
     and
     eq
@@ -12,7 +12,7 @@
     and
     push1 0x28
     jumpi
-    push2 0x342f
+    push2 0x3476
     jump
 
 // dispatcher
@@ -144,25 +144,13 @@ _jump_dest_dispatcher_000028:
     stop
     stop
     stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
     stop
     stop
+    lt
     stop
     stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
@@ -229,8 +217,8 @@ _jump_dest_univ2_weth_token_000100:
     push1 0xa4
     push0
     push0
-    __tablesize(table_227)
-    __tablestart(table_227)
+    __tablesize(table_215)
+    __tablestart(table_215)
     push0
     codecopy
     callvalue
@@ -252,8 +240,8 @@ _jump_dest_univ2_weth_token_000100:
     gas
     call
     pop
-    __tablesize(table_250)
-    __tablestart(table_250)
+    __tablesize(table_238)
+    __tablestart(table_238)
     push0
     codecopy
     push1 0x04
@@ -321,11 +309,14 @@ _jump_dest_unknown_000180:
     stop
     stop
     stop
-    push19 0xdd0000000000000000000000006b75d8af0000
+    push19 0xdd0000000000000000000000001f2f10d1c407
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
-    signextend
-    push27 0x7ddf000ba900b4009a800000000000000000000000000000000000
+    stop
+    stop
+    stop
+    stop
     stop
     stop
     stop
@@ -472,8 +463,8 @@ _jump_dest_univ3_add_liq_000240:
     push1 0xa4
     push0
     push0
-    __tablesize(table_467)
-    __tablestart(table_467)
+    __tablesize(table_458)
+    __tablestart(table_458)
     push0
     codecopy
     callvalue
@@ -495,8 +486,8 @@ _jump_dest_univ3_add_liq_000240:
     gas
     call
     pop
-    __tablesize(table_490)
-    __tablestart(table_490)
+    __tablesize(table_481)
+    __tablestart(table_481)
     push0
     codecopy
     push1 0x04
@@ -565,8 +556,8 @@ _jump_dest_unknown_0002c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_560)
-    __tablestart(table_560)
+    __tablesize(table_551)
+    __tablestart(table_551)
     push0
     codecopy
     push1 0x04
@@ -598,8 +589,8 @@ _jump_dest_unknown_0002c0:
     gas
     call
     pop
-    __tablesize(table_593)
-    __tablestart(table_593)
+    __tablesize(table_584)
+    __tablestart(table_584)
     push0
     codecopy
     push1 0x04
@@ -658,8 +649,8 @@ _jump_dest_univ2_uscd_token_000340:
     push1 0xa4
     push0
     push0
-    __tablesize(table_651)
-    __tablestart(table_651)
+    __tablesize(table_642)
+    __tablestart(table_642)
     push0
     codecopy
     callvalue
@@ -681,8 +672,8 @@ _jump_dest_univ2_uscd_token_000340:
     gas
     call
     pop
-    __tablesize(table_674)
-    __tablestart(table_674)
+    __tablesize(table_665)
+    __tablestart(table_665)
     push0
     codecopy
     push1 0x04
@@ -754,8 +745,8 @@ _jump_dest_univ2_univ3_arb_0003c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_745)
-    __tablestart(table_745)
+    __tablesize(table_736)
+    __tablestart(table_736)
     push0
     codecopy
     callvalue
@@ -777,8 +768,8 @@ _jump_dest_univ2_univ3_arb_0003c0:
     gas
     call
     pop
-    __tablesize(table_768)
-    __tablestart(table_768)
+    __tablesize(table_759)
+    __tablestart(table_759)
     push0
     codecopy
     push1 0x04
@@ -847,8 +838,8 @@ _jump_dest_unknown_000440:
     push1 0xa4
     push0
     push0
-    __tablesize(table_838)
-    __tablestart(table_838)
+    __tablesize(table_829)
+    __tablestart(table_829)
     push0
     codecopy
     push1 0x04
@@ -880,8 +871,8 @@ _jump_dest_unknown_000440:
     gas
     call
     pop
-    __tablesize(table_871)
-    __tablestart(table_871)
+    __tablesize(table_862)
+    __tablestart(table_862)
     push0
     codecopy
     push1 0x04
@@ -940,8 +931,8 @@ _jump_dest_univ2_usdt_token_0004c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_929)
-    __tablestart(table_929)
+    __tablesize(table_920)
+    __tablestart(table_920)
     push0
     codecopy
     callvalue
@@ -963,8 +954,8 @@ _jump_dest_univ2_usdt_token_0004c0:
     gas
     call
     pop
-    __tablesize(table_952)
-    __tablestart(table_952)
+    __tablesize(table_943)
+    __tablestart(table_943)
     push0
     codecopy
     push1 0x04
@@ -1036,8 +1027,8 @@ _jump_dest_univ2_usdt_multi_000540:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1023)
-    __tablestart(table_1023)
+    __tablesize(table_1014)
+    __tablestart(table_1014)
     push0
     codecopy
     callvalue
@@ -1059,8 +1050,8 @@ _jump_dest_univ2_usdt_multi_000540:
     gas
     call
     pop
-    __tablesize(table_1046)
-    __tablestart(table_1046)
+    __tablesize(table_1037)
+    __tablestart(table_1037)
     push0
     codecopy
     push1 0x04
@@ -1129,8 +1120,8 @@ _jump_dest_unknown_0005c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1116)
-    __tablestart(table_1116)
+    __tablesize(table_1107)
+    __tablestart(table_1107)
     push0
     codecopy
     push1 0x04
@@ -1162,8 +1153,8 @@ _jump_dest_unknown_0005c0:
     gas
     call
     pop
-    __tablesize(table_1149)
-    __tablestart(table_1149)
+    __tablesize(table_1140)
+    __tablestart(table_1140)
     push0
     codecopy
     push1 0x04
@@ -1222,8 +1213,8 @@ _jump_dest_sushi_token_weth_000640:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1207)
-    __tablestart(table_1207)
+    __tablesize(table_1198)
+    __tablestart(table_1198)
     push0
     codecopy
     push1 0x04
@@ -1252,8 +1243,8 @@ _jump_dest_sushi_token_weth_000640:
     gas
     call
     pop
-    __tablesize(table_1237)
-    __tablestart(table_1237)
+    __tablesize(table_1228)
+    __tablestart(table_1228)
     push0
     codecopy
     callvalue
@@ -1336,8 +1327,8 @@ _jump_dest_sushi_tokhen_weth_again_0006c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1319)
-    __tablestart(table_1319)
+    __tablesize(table_1310)
+    __tablestart(table_1310)
     push0
     codecopy
     push1 0x04
@@ -1366,15 +1357,15 @@ _jump_dest_sushi_tokhen_weth_again_0006c0:
     gas
     call
     pop
-    __tablesize(table_1349)
-    __tablestart(table_1349)
+    __tablesize(table_1340)
+    __tablestart(table_1340)
     push1 0x04
     codecopy
     callvalue
     chainid
     mstore
-    __tablesize(table_1356)
-    __tablestart(table_1356)
+    __tablesize(table_1347)
+    __tablestart(table_1347)
     push0
     codecopy
     gas
@@ -1447,8 +1438,8 @@ _jump_dest_sushi_uni_arb_000740:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1429)
-    __tablestart(table_1429)
+    __tablesize(table_1420)
+    __tablestart(table_1420)
     push0
     codecopy
     push1 0x04
@@ -1477,8 +1468,8 @@ _jump_dest_sushi_uni_arb_000740:
     gas
     call
     pop
-    __tablesize(table_1459)
-    __tablestart(table_1459)
+    __tablesize(table_1450)
+    __tablestart(table_1450)
     push0
     codecopy
     callvalue
@@ -1560,8 +1551,8 @@ _jump_dest_sushi_two_0007c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1540)
-    __tablestart(table_1540)
+    __tablesize(table_1531)
+    __tablestart(table_1531)
     push0
     codecopy
     push1 0x04
@@ -1590,15 +1581,15 @@ _jump_dest_sushi_two_0007c0:
     gas
     call
     pop
-    __tablesize(table_1570)
-    __tablestart(table_1570)
+    __tablesize(table_1561)
+    __tablestart(table_1561)
     push1 0x04
     codecopy
     callvalue
     chainid
     mstore
-    __tablesize(table_1577)
-    __tablestart(table_1577)
+    __tablesize(table_1568)
+    __tablestart(table_1568)
     push0
     codecopy
     gas
@@ -1668,8 +1659,8 @@ _jump_dest_unknown_000840:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1649)
-    __tablestart(table_1649)
+    __tablesize(table_1640)
+    __tablestart(table_1640)
     push0
     codecopy
     push1 0x04
@@ -1706,8 +1697,8 @@ _jump_dest_unknown_000840:
     gas
     call
     pop
-    __tablesize(table_1687)
-    __tablestart(table_1687)
+    __tablesize(table_1678)
+    __tablestart(table_1678)
     push0
     codecopy
     push1 0x04
@@ -1779,8 +1770,8 @@ _jump_dest_univ2_token_usdc_0008c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1758)
-    __tablestart(table_1758)
+    __tablesize(table_1749)
+    __tablestart(table_1749)
     push0
     codecopy
     push1 0x04
@@ -1809,8 +1800,8 @@ _jump_dest_univ2_token_usdc_0008c0:
     gas
     call
     pop
-    __tablesize(table_1788)
-    __tablestart(table_1788)
+    __tablesize(table_1779)
+    __tablestart(table_1779)
     push0
     codecopy
     callvalue
@@ -1893,8 +1884,8 @@ _jump_dest_univ2_multi_000940:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1870)
-    __tablestart(table_1870)
+    __tablesize(table_1861)
+    __tablestart(table_1861)
     push0
     codecopy
     push1 0x04
@@ -1923,8 +1914,8 @@ _jump_dest_univ2_multi_000940:
     gas
     call
     pop
-    __tablesize(table_1900)
-    __tablestart(table_1900)
+    __tablesize(table_1891)
+    __tablestart(table_1891)
     push0
     codecopy
     callvalue
@@ -2006,8 +1997,8 @@ _jump_dest_univ2_token_usdc_again_0009c0:
     push1 0xa4
     push0
     push0
-    __tablesize(table_1981)
-    __tablestart(table_1981)
+    __tablesize(table_1972)
+    __tablestart(table_1972)
     push0
     codecopy
     push1 0x04
@@ -2036,8 +2027,8 @@ _jump_dest_univ2_token_usdc_again_0009c0:
     gas
     call
     pop
-    __tablesize(table_2011)
-    __tablestart(table_2011)
+    __tablesize(table_2002)
+    __tablestart(table_2002)
     push0
     codecopy
     callvalue
@@ -2119,8 +2110,8 @@ _jump_dest_univ2_v3_swap_000a40:
     push1 0xa4
     push0
     push0
-    __tablesize(table_2092)
-    __tablestart(table_2092)
+    __tablesize(table_2083)
+    __tablestart(table_2083)
     push0
     codecopy
     push1 0x04
@@ -2149,8 +2140,8 @@ _jump_dest_univ2_v3_swap_000a40:
     gas
     call
     pop
-    __tablesize(table_2122)
-    __tablestart(table_2122)
+    __tablesize(table_2113)
+    __tablestart(table_2113)
     push0
     codecopy
     callvalue
@@ -2260,8 +2251,8 @@ _jump_dest_univ2_arb_token_token_000ac0:
     stop
 
 _jump_dest_unknown_000b00:
-    __tablesize(table_2230)
-    __tablestart(table_2230)
+    __tablesize(table_2221)
+    __tablestart(table_2221)
     push0
     codecopy
     push1 0x04
@@ -2317,8 +2308,8 @@ _jump_dest_withdraw_eth_000b40:
     callvalue
     chainid
     mstore
-    __tablesize(table_2284)
-    __tablestart(table_2284)
+    __tablesize(table_2275)
+    __tablestart(table_2275)
     push0
     codecopy
     push0
@@ -2421,8 +2412,8 @@ _jump_dest_self_destruct_000b80:
     stop
 
 _jump_dest_unknown_000bc0:
-    __tablesize(table_2384)
-    __tablestart(table_2384)
+    __tablesize(table_2375)
+    __tablestart(table_2375)
     push0
     codecopy
     push1 0x14
@@ -2519,8 +2510,8 @@ _jump_dest_unknown_000bc0:
     stop
 
 _jump_dest_unknown_000c40:
-    __tablesize(table_2481)
-    __tablestart(table_2481)
+    __tablesize(table_2472)
+    __tablestart(table_2472)
     push0
     codecopy
     push1 0x14
@@ -2617,8 +2608,8 @@ _jump_dest_unknown_000c40:
     stop
 
 _jump_dest_unknown_000cc0:
-    __tablesize(table_2578)
-    __tablestart(table_2578)
+    __tablesize(table_2569)
+    __tablestart(table_2569)
     push0
     codecopy
     push1 0x14
@@ -2715,8 +2706,8 @@ _jump_dest_unknown_000cc0:
     stop
 
 _jump_dest_unknown_000d40:
-    __tablesize(table_2675)
-    __tablestart(table_2675)
+    __tablesize(table_2666)
+    __tablestart(table_2666)
     push0
     codecopy
     push1 0x04
@@ -2770,8 +2761,8 @@ _jump_dest_unknown_000d40:
     stop
 
 _jump_dest_unknown_000d80:
-    __tablesize(table_2730)
-    __tablestart(table_2730)
+    __tablesize(table_2721)
+    __tablestart(table_2721)
     push0
     codecopy
     push1 0x04
@@ -2912,18 +2903,13 @@ _jump_dest_unknown_000d80:
     stop
     stop
     stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
     stop
     stop
+    lt
     stop
     stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
@@ -2959,30 +2945,11 @@ _jump_dest_unknown_000d80:
     stop
     stop
     stop
+    lt
     stop
     stop
-    stop
-    stop
-    stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
-    stop
-    stop
-    stop
-    stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
@@ -3352,8 +3319,8 @@ _jump_dest_unknown_000d80:
     stop
 
 _jump_dest_unknown_001000:
-    __tablesize(table_3312)
-    __tablestart(table_3312)
+    __tablesize(table_3279)
+    __tablestart(table_3279)
     push0
     codecopy
     push0
@@ -3410,8 +3377,8 @@ _jump_dest_unknown_001000:
     stop
 
 _jump_dest_unknown_001040:
-    __tablesize(table_3369)
-    __tablestart(table_3369)
+    __tablesize(table_3336)
+    __tablestart(table_3336)
     push0
     codecopy
     dup1
@@ -3464,8 +3431,8 @@ _jump_dest_unknown_001040:
     stop
 
 _jump_dest_unknown_001080:
-    __tablesize(table_3422)
-    __tablestart(table_3422)
+    __tablesize(table_3389)
+    __tablestart(table_3389)
     push0
     codecopy
     dup1
@@ -3547,8 +3514,8 @@ _jump_dest_unknown_001080:
     stop
 
 _jump_dest_unknown_001100:
-    __tablesize(table_3504)
-    __tablestart(table_3504)
+    __tablesize(table_3471)
+    __tablestart(table_3471)
     push0
     codecopy
     dup1
@@ -3627,8 +3594,8 @@ _jump_dest_unknown_001100:
     stop
 
 _jump_dest_unknown_001180:
-    __tablesize(table_3583)
-    __tablestart(table_3583)
+    __tablesize(table_3550)
+    __tablestart(table_3550)
     push0
     codecopy
     push1 0x14
@@ -3845,8 +3812,8 @@ _jump_dest_unknown_001180:
     stop
 
 _jump_dest_unknown_001280:
-    __tablesize(table_3800)
-    __tablestart(table_3800)
+    __tablesize(table_3767)
+    __tablestart(table_3767)
     push0
     codecopy
     push1 0x14
@@ -3926,25 +3893,13 @@ _jump_dest_unknown_001280:
     stop
     stop
     stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
     stop
     stop
+    lt
     stop
     stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
@@ -4148,25 +4103,13 @@ _jump_dest_unknown_001280:
     stop
     stop
     stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
     stop
     stop
+    lt
     stop
     stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
@@ -4346,8 +4289,8 @@ _jump_dest_unknown_001280:
     stop
 
 _jump_dest_unknown_001521:
-    __tablesize(table_4300)
-    __tablestart(table_4300)
+    __tablesize(table_4243)
+    __tablestart(table_4243)
     push0
     codecopy
     caller
@@ -4369,8 +4312,8 @@ _jump_dest_unknown_001521:
     stop
 
 _jump_dest_unknown_001552:
-    __tablesize(table_4322)
-    __tablestart(table_4322)
+    __tablesize(table_4265)
+    __tablestart(table_4265)
     push0
     codecopy
     caller
@@ -4455,8 +4398,8 @@ _jump_dest_unknown_001552:
 // USDT -> WETH univ3
 // example: https://etherscan.io/tx/0x090ceb83d76f40864aa03c6aa43fc9ed4585e253e5c7e217a045cd71c0cfe4dc
 _jump_dest_univ3_usdt_weth_0015c0:
-    __tablesize(table_4405)
-    __tablestart(table_4405)
+    __tablesize(table_4348)
+    __tablestart(table_4348)
     push0
     codecopy
     push1 0x04
@@ -4536,11 +4479,10 @@ _jump_dest_univ3_usdt_weth_0015c0:
 // swap v3 WETH -> TOKEN
 // example: https://etherscan.io/tx/0x0680c5c80774ee28749a0e5a66e3bc6c4ef7373f9976a7def0f313be2f1e8d54
 _jump_dest_univ3_weth_token_001640:
-    __tablesize(table_4483)
-    __tablestart(table_4483)
+    __tablesize(table_4426)
+    __tablestart(table_4426)
     push0
     codecopy
-    stop
     callvalue
     push1 0x18
     shl
@@ -4587,8 +4529,8 @@ _jump_dest_univ3_weth_token_001640:
     revert
 
 _jump_dest_unknown_0016a2:
-    __tablesize(table_4532)
-    __tablestart(table_4532)
+    __tablesize(table_4475)
+    __tablestart(table_4475)
     push0
     codecopy
     caller
@@ -4599,6 +4541,7 @@ _jump_dest_unknown_0016a2:
     push1 0x24
     mstore
     push0
+    stop
     push0
     push1 0x44
     push0
@@ -4611,8 +4554,8 @@ _jump_dest_unknown_0016a2:
     stop
 
 _jump_dest_unknown_0016c1:
-    __tablesize(table_4555)
-    __tablestart(table_4555)
+    __tablesize(table_4498)
+    __tablestart(table_4498)
     push0
     codecopy
     caller
@@ -4669,8 +4612,8 @@ _jump_dest_unknown_0016c1:
 // usdt -> weth univ3
 // example: https://etherscan.io/tx/0xba028689d9b4a3e40d3aeae676e03b2c788a63a72ac1670603417d173d59c943
 _jump_dest_univ3_usdt_weth_again_001700:
-    __tablesize(table_4610)
-    __tablestart(table_4610)
+    __tablesize(table_4553)
+    __tablestart(table_4553)
     push0
     codecopy
     push1 0x04
@@ -4751,8 +4694,8 @@ _jump_dest_univ3_usdt_weth_again_001700:
 // swap v3 TOKEN -> WETH
 // example: https://etherscan.io/tx/0x8d80af5cf67eb1943f4004380770ee4eb0f69ac2fdd353dd296da8c51d4ef1d9
 _jump_dest_univ3_token_weth_001780:
-    __tablesize(table_4689)
-    __tablestart(table_4689)
+    __tablesize(table_4632)
+    __tablestart(table_4632)
     push0
     codecopy
     callvalue
@@ -4829,8 +4772,8 @@ _jump_dest_univ3_token_weth_001780:
     stop
 
 _jump_dest_unknown_001800:
-    __tablesize(table_4766)
-    __tablestart(table_4766)
+    __tablesize(table_4709)
+    __tablestart(table_4709)
     push0
     codecopy
     push1 0x04
@@ -4935,8 +4878,8 @@ _jump_dest_unknown_001800:
     stop
 
 _jump_dest_unknown_0018c0:
-    __tablesize(table_4871)
-    __tablestart(table_4871)
+    __tablesize(table_4814)
+    __tablestart(table_4814)
     push0
     codecopy
     push1 0x14
@@ -5038,8 +4981,8 @@ _jump_dest_unknown_0018c0:
     stop
 
 _jump_dest_unknown_001980:
-    __tablesize(table_4973)
-    __tablestart(table_4973)
+    __tablesize(table_4916)
+    __tablestart(table_4916)
     push0
     codecopy
     push1 0x04
@@ -5146,8 +5089,8 @@ _jump_dest_unknown_001980:
     stop
 
 _jump_dest_unknown_001a40:
-    __tablesize(table_5080)
-    __tablestart(table_5080)
+    __tablesize(table_5023)
+    __tablestart(table_5023)
     push0
     codecopy
     push1 0x14
@@ -5235,8 +5178,8 @@ _jump_dest_unknown_001a40:
     revert
 
 _jump_dest_unknown_001af0:
-    __tablesize(table_5168)
-    __tablestart(table_5168)
+    __tablesize(table_5111)
+    __tablestart(table_5111)
     push0
     codecopy
     caller
@@ -5281,22 +5224,8 @@ _jump_dest_unknown_001b13:
     stop
     extcodecopy
     dup11
-    push30 0x8d0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4
-    stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    push30 0x8d0000000000000000000000001f2f10d1c40777ae1da742455c65828ff3
+    push14 0xf387000000000000000000000000
     stop
     stop
     stop
@@ -5589,8 +5518,8 @@ _jump_dest_unknown_001b13:
     stop
 
 _jump_dest_unknown_001c80:
-    __tablesize(table_5520)
-    __tablestart(table_5520)
+    __tablesize(table_5449)
+    __tablestart(table_5449)
     push0
     codecopy
     dup1
@@ -5864,25 +5793,13 @@ _jump_dest_unknown_001c80:
     stop
     stop
     stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
     stop
     stop
+    lt
     stop
     stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
@@ -5904,8 +5821,8 @@ _jump_dest_unknown_001c80:
     stop
 
 _jump_dest_unknown_001e00:
-    __tablesize(table_5834)
-    __tablestart(table_5834)
+    __tablesize(table_5751)
+    __tablestart(table_5751)
     push1 0x20
     codecopy
     dup1
@@ -5959,8 +5876,8 @@ _jump_dest_unknown_001e00:
     gas
     call
     swap6
-    __tablesize(table_5889)
-    __tablestart(table_5889)
+    __tablesize(table_5806)
+    __tablestart(table_5806)
     push0
     codecopy
     push16 0xffffffffffffffffffffffffffffffff
@@ -6089,8 +6006,8 @@ _jump_dest_univ2_token_weth_other_001f00:
     push1 0x28
     push0
     sha3
-    __tablesize(table_6016)
-    __tablestart(table_6016)
+    __tablesize(table_5933)
+    __tablestart(table_5933)
     push0
     codecopy
     push1 0x15
@@ -6100,8 +6017,8 @@ _jump_dest_univ2_token_weth_other_001f00:
     sha3
     push20 0xffffffffffffffffffffffffffffffffffffffff
     and
-    __tablesize(table_6027)
-    __tablestart(table_6027)
+    __tablesize(table_5944)
+    __tablestart(table_5944)
     push0
     codecopy
     dup1
@@ -6119,8 +6036,8 @@ _jump_dest_univ2_token_weth_other_001f00:
     gas
     call
     pop
-    __tablesize(table_6046)
-    __tablestart(table_6046)
+    __tablesize(table_5963)
+    __tablestart(table_5963)
     push0
     codecopy
     callvalue
@@ -6210,8 +6127,8 @@ _jump_dest_univ3_liq_swap_001fc0:
     push1 0x28
     push0
     sha3
-    __tablesize(table_6135)
-    __tablestart(table_6135)
+    __tablesize(table_6052)
+    __tablestart(table_6052)
     push0
     codecopy
     push1 0x15
@@ -6221,8 +6138,8 @@ _jump_dest_univ3_liq_swap_001fc0:
     sha3
     push20 0xffffffffffffffffffffffffffffffffffffffff
     and
-    __tablesize(table_6146)
-    __tablestart(table_6146)
+    __tablesize(table_6063)
+    __tablestart(table_6063)
     push0
     codecopy
     dup1
@@ -6240,8 +6157,8 @@ _jump_dest_univ3_liq_swap_001fc0:
     gas
     call
     pop
-    __tablesize(table_6165)
-    __tablestart(table_6165)
+    __tablesize(table_6082)
+    __tablestart(table_6082)
     push0
     codecopy
     callvalue
@@ -6330,8 +6247,8 @@ _jump_dest_univ2_token_weth_other2_002080:
     push1 0x28
     push0
     sha3
-    __tablesize(table_6253)
-    __tablestart(table_6253)
+    __tablesize(table_6170)
+    __tablestart(table_6170)
     push0
     codecopy
     push1 0x15
@@ -6341,8 +6258,8 @@ _jump_dest_univ2_token_weth_other2_002080:
     sha3
     push20 0xffffffffffffffffffffffffffffffffffffffff
     and
-    __tablesize(table_6264)
-    __tablestart(table_6264)
+    __tablesize(table_6181)
+    __tablestart(table_6181)
     push0
     codecopy
     dup1
@@ -6360,15 +6277,15 @@ _jump_dest_univ2_token_weth_other2_002080:
     gas
     call
     pop
-    __tablesize(table_6283)
-    __tablestart(table_6283)
+    __tablesize(table_6200)
+    __tablestart(table_6200)
     push1 0x04
     codecopy
     callvalue
     chainid
     mstore
-    __tablesize(table_6290)
-    __tablestart(table_6290)
+    __tablesize(table_6207)
+    __tablestart(table_6207)
     push0
     codecopy
     gas
@@ -6448,8 +6365,8 @@ _jump_dest_univ2_token_token_002140:
     push1 0x28
     push0
     sha3
-    __tablesize(table_6370)
-    __tablestart(table_6370)
+    __tablesize(table_6287)
+    __tablestart(table_6287)
     push0
     codecopy
     push1 0x15
@@ -6459,8 +6376,8 @@ _jump_dest_univ2_token_token_002140:
     sha3
     push20 0xffffffffffffffffffffffffffffffffffffffff
     and
-    __tablesize(table_6381)
-    __tablestart(table_6381)
+    __tablesize(table_6298)
+    __tablestart(table_6298)
     push0
     codecopy
     dup1
@@ -6478,15 +6395,15 @@ _jump_dest_univ2_token_token_002140:
     gas
     call
     pop
-    __tablesize(table_6400)
-    __tablestart(table_6400)
+    __tablesize(table_6317)
+    __tablestart(table_6317)
     push1 0x04
     codecopy
     callvalue
     chainid
     mstore
-    __tablesize(table_6407)
-    __tablestart(table_6407)
+    __tablesize(table_6324)
+    __tablestart(table_6324)
     push0
     codecopy
     gas
@@ -6565,8 +6482,8 @@ _jump_dest_unknown_002200:
     push1 0x28
     push0
     sha3
-    __tablesize(table_6488)
-    __tablestart(table_6488)
+    __tablesize(table_6405)
+    __tablestart(table_6405)
     push0
     codecopy
     push1 0x15
@@ -6576,8 +6493,8 @@ _jump_dest_unknown_002200:
     sha3
     push20 0xffffffffffffffffffffffffffffffffffffffff
     and
-    __tablesize(table_6499)
-    __tablestart(table_6499)
+    __tablesize(table_6416)
+    __tablestart(table_6416)
     push0
     codecopy
     dup1
@@ -6599,8 +6516,8 @@ _jump_dest_unknown_002200:
     gas
     call
     pop
-    __tablesize(table_6522)
-    __tablestart(table_6522)
+    __tablesize(table_6439)
+    __tablestart(table_6439)
     push0
     codecopy
     push1 0x04
@@ -6681,8 +6598,8 @@ _jump_dest_unknown_0022c0:
     push1 0x28
     push0
     sha3
-    __tablesize(table_6604)
-    __tablestart(table_6604)
+    __tablesize(table_6521)
+    __tablestart(table_6521)
     push0
     codecopy
     push1 0x15
@@ -6692,8 +6609,8 @@ _jump_dest_unknown_0022c0:
     sha3
     push20 0xffffffffffffffffffffffffffffffffffffffff
     and
-    __tablesize(table_6615)
-    __tablestart(table_6615)
+    __tablesize(table_6532)
+    __tablestart(table_6532)
     push0
     codecopy
     dup1
@@ -6715,8 +6632,8 @@ _jump_dest_unknown_0022c0:
     gas
     call
     pop
-    __tablesize(table_6638)
-    __tablestart(table_6638)
+    __tablesize(table_6555)
+    __tablestart(table_6555)
     push0
     codecopy
     push1 0x04
@@ -6773,8 +6690,8 @@ _jump_dest_unknown_0022c0:
     stop
 
 _jump_dest_unknown_002380:
-    __tablesize(table_6696)
-    __tablestart(table_6696)
+    __tablesize(table_6613)
+    __tablestart(table_6613)
     push0
     codecopy
     dup1
@@ -6931,8 +6848,8 @@ _jump_dest_unknown_002380:
     stop
 
 _jump_dest_unknown_002440:
-    __tablesize(table_6853)
-    __tablestart(table_6853)
+    __tablesize(table_6770)
+    __tablestart(table_6770)
     push0
     codecopy
     caller
@@ -7014,8 +6931,8 @@ _jump_dest_unknown_002440:
     stop
 
 _jump_dest_unknown_0024c0:
-    __tablesize(table_6935)
-    __tablestart(table_6935)
+    __tablesize(table_6852)
+    __tablestart(table_6852)
     push0
     codecopy
     caller
@@ -7097,8 +7014,8 @@ _jump_dest_unknown_0024c0:
     stop
 
 _jump_dest_unknown_002540:
-    __tablesize(table_7017)
-    __tablestart(table_7017)
+    __tablesize(table_6934)
+    __tablestart(table_6934)
     push0
     codecopy
     push1 0x04
@@ -7318,8 +7235,8 @@ _jump_dest_unknown_002600:
     stop
 
 _jump_dest_unknown_002640:
-    __tablesize(table_7236)
-    __tablestart(table_7236)
+    __tablesize(table_7153)
+    __tablestart(table_7153)
     push0
     codecopy
     push1 0x04
@@ -7473,8 +7390,8 @@ _jump_dest_unknown_002640:
     stop
 
 _jump_dest_unknown_002700:
-    __tablesize(table_7390)
-    __tablestart(table_7390)
+    __tablesize(table_7307)
+    __tablestart(table_7307)
     push0
     codecopy
     caller
@@ -7564,8 +7481,8 @@ _jump_dest_unknown_002700:
     stop
 
 _jump_dest_unknown_002780:
-    __tablesize(table_7480)
-    __tablestart(table_7480)
+    __tablesize(table_7397)
+    __tablestart(table_7397)
     push0
     codecopy
     caller
@@ -7660,8 +7577,8 @@ _jump_dest_unknown_002780:
     stop
 
 _jump_dest_unknown_002800:
-    __tablesize(table_7575)
-    __tablestart(table_7575)
+    __tablesize(table_7492)
+    __tablestart(table_7492)
     push0
     codecopy
     push1 0x04
@@ -7717,8 +7634,8 @@ _jump_dest_unknown_002800:
     stop
 
 _jump_dest_unknown_002840:
-    __tablesize(table_7632)
-    __tablestart(table_7632)
+    __tablesize(table_7549)
+    __tablestart(table_7549)
     push0
     codecopy
     push1 0x24
@@ -7774,8 +7691,8 @@ _jump_dest_unknown_002840:
     stop
 
 _jump_dest_unknown_002880:
-    __tablesize(table_7689)
-    __tablestart(table_7689)
+    __tablesize(table_7606)
+    __tablestart(table_7606)
     push0
     codecopy
     caller
@@ -7865,8 +7782,8 @@ _jump_dest_unknown_002880:
     stop
 
 _jump_dest_unknown_002900:
-    __tablesize(table_7779)
-    __tablestart(table_7779)
+    __tablesize(table_7696)
+    __tablestart(table_7696)
     push0
     codecopy
     caller
@@ -7960,8 +7877,8 @@ _jump_dest_unknown_002900:
     stop
 
 _jump_dest_unknown_002980:
-    __tablesize(table_7873)
-    __tablestart(table_7873)
+    __tablesize(table_7790)
+    __tablestart(table_7790)
     push0
     codecopy
     push32 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -8086,8 +8003,8 @@ _jump_dest_unknown_002980:
     stop
 
 _jump_dest_unknown_002a40:
-    __tablesize(table_7998)
-    __tablestart(table_7998)
+    __tablesize(table_7915)
+    __tablestart(table_7915)
     push0
     codecopy
     push32 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -8209,8 +8126,8 @@ _jump_dest_unknown_002a40:
     stop
 
 _jump_dest_unknown_002b00:
-    __tablesize(table_8120)
-    __tablestart(table_8120)
+    __tablesize(table_8037)
+    __tablestart(table_8037)
     push0
     codecopy
     push0
@@ -8247,8 +8164,8 @@ _jump_dest_unknown_002b00:
     revert
 
 _jump_dest_unknown_002b40:
-    __tablesize(table_8157)
-    __tablestart(table_8157)
+    __tablesize(table_8074)
+    __tablestart(table_8074)
     push0
     codecopy
     push1 0x04
@@ -8348,8 +8265,8 @@ _jump_dest_unknown_002b40:
     stop
 
 _jump_dest_unknown_002bc0:
-    __tablesize(table_8257)
-    __tablestart(table_8257)
+    __tablesize(table_8174)
+    __tablestart(table_8174)
     push0
     codecopy
     push1 0x14
@@ -8403,8 +8320,8 @@ _jump_dest_unknown_002bc0:
     stop
 
 _jump_dest_unknown_002c00:
-    __tablesize(table_8311)
-    __tablestart(table_8311)
+    __tablesize(table_8228)
+    __tablestart(table_8228)
     push0
     codecopy
     push1 0x14
@@ -8774,8 +8691,8 @@ _jump_dest_unknown_002cc9:
     stop
 
 _jump_dest_unknown_002d80:
-    __tablesize(table_8680)
-    __tablestart(table_8680)
+    __tablesize(table_8597)
+    __tablestart(table_8597)
     push0
     codecopy
     dup1
@@ -8885,8 +8802,8 @@ _jump_dest_unknown_002d80:
     stop
 
 _jump_dest_unknown_002e00:
-    __tablesize(table_8790)
-    __tablestart(table_8790)
+    __tablesize(table_8707)
+    __tablestart(table_8707)
     push0
     codecopy
     dup1
@@ -9187,18 +9104,13 @@ _jump_dest_unknown_002e00:
     stop
     stop
     stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
     stop
     stop
+    lt
     stop
     stop
-    swap11
-    dup1
-    stop
-    swap4
-    create2
-    swap11
+    smod
+    push24 0xae1da742455c65828ff36df387dd93f59a00000000000000
     stop
     stop
     stop
@@ -9206,30 +9118,11 @@ _jump_dest_unknown_002e00:
     stop
     stop
     stop
+    lt
     stop
     stop
-    stop
-    stop
-    stop
-    push12 0x75d8af000000e20b7a7ddf00
-    signextend
-    stop
-    stop
-    stop
-    stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
@@ -9240,8 +9133,8 @@ _jump_dest_unknown_002e00:
     stop
 
 _jump_dest_unknown_002fc0:
-    __tablesize(table_9144)
-    __tablestart(table_9144)
+    __tablesize(table_9037)
+    __tablestart(table_9037)
     push0
     codecopy
     dup1
@@ -9268,8 +9161,8 @@ _jump_dest_unknown_002fc0:
     gas
     call
     pop
-    __tablesize(table_9172)
-    __tablestart(table_9172)
+    __tablesize(table_9065)
+    __tablestart(table_9065)
     push0
     codecopy
     push1 0x04
@@ -9302,8 +9195,8 @@ _jump_dest_unknown_002fc0:
     dup7
     gas
     call
-    __tablesize(table_9206)
-    __tablestart(table_9206)
+    __tablesize(table_9099)
+    __tablestart(table_9099)
     push0
     codecopy
     dup3
@@ -9343,8 +9236,8 @@ _jump_dest_unknown_002fc0:
     stop
 
 _jump_dest_unknown_003040:
-    __tablesize(table_9246)
-    __tablestart(table_9246)
+    __tablesize(table_9139)
+    __tablestart(table_9139)
     push0
     codecopy
     dup1
@@ -9384,12 +9277,12 @@ _jump_dest_unknown_003040:
     gas
     call
     pop
-    __tablesize(table_9287)
-    __tablestart(table_9287)
+    __tablesize(table_9180)
+    __tablestart(table_9180)
     push1 0x20
     codecopy
-    __tablesize(table_9291)
-    __tablestart(table_9291)
+    __tablesize(table_9184)
+    __tablestart(table_9184)
     push1 0x44
     codecopy
     push1 0x04
@@ -9445,8 +9338,8 @@ _jump_dest_unknown_003040:
     stop
 
 _jump_dest_unknown_0030c0:
-    __tablesize(table_9347)
-    __tablestart(table_9347)
+    __tablesize(table_9240)
+    __tablestart(table_9240)
     push0
     codecopy
     push1 0x20
@@ -9500,8 +9393,8 @@ _jump_dest_unknown_0030c0:
     stop
 
 _jump_dest_unknown_003100:
-    __tablesize(table_9401)
-    __tablestart(table_9401)
+    __tablesize(table_9294)
+    __tablestart(table_9294)
     push0
     codecopy
     push1 0x20
@@ -9546,15 +9439,18 @@ _jump_dest_unknown_003100:
     push0
     push0
     revert
-    push17 0xa082310000000000000000000000006b75
+    push17 0xa082310000000000000000000000001f2f
+    lt
+    stop
+    stop
+    smod
+    push24 0xae1da742455c65828ff36df3870000000000000000000000
     stop
     stop
     stop
     stop
     stop
     stop
-    signextend
-    push27 0x7ddf000ba900b4009a800000000000000000000000000000000000
     stop
     stop
     stop
@@ -9575,8 +9471,8 @@ _jump_dest_unknown_003100:
     stop
 
 _jump_dest_unknown_003180:
-    __tablesize(table_9475)
-    __tablestart(table_9475)
+    __tablesize(table_9371)
+    __tablestart(table_9371)
     push0
     codecopy
     push1 0x20
@@ -9623,24 +9519,10 @@ _jump_dest_unknown_003180:
     stop
     shl
     dup14
-    push27 0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba9
-    stop
-    stop
-    stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    push27 0x0000000000000000000000001f2f10d1c40777ae1da742455c6582
+    dup16
+    return
+    push14 0xf387000000000000000000000000
     stop
     stop
     stop
@@ -9716,24 +9598,10 @@ _jump_dest_unknown_003180:
     stop
     shl
     dup14
-    push27 0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba9
-    stop
-    stop
-    stop
-    swap11
-    dup1
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
-    stop
+    push27 0x0000000000000000000000001f2f10d1c40777ae1da742455c6582
+    dup16
+    return
+    push14 0xf387000000000000000000000000
     stop
     stop
     stop
@@ -9860,8 +9728,8 @@ _jump_dest_unknown_003180:
     stop
 
 _jump_dest_unknown_003300:
-    __tablesize(table_9759)
-    __tablestart(table_9759)
+    __tablesize(table_9627)
+    __tablestart(table_9627)
     push0
     codecopy
     push1 0x40
@@ -9908,8 +9776,8 @@ _jump_dest_unknown_003300:
     pop
     push1 0x24
     mload
-    __tablesize(table_9807)
-    __tablestart(table_9807)
+    __tablesize(table_9675)
+    __tablestart(table_9675)
     push0
     codecopy
     push1 0x44
@@ -9967,8 +9835,8 @@ _jump_dest_unknown_003300:
     stop
 
 _jump_dest_unknown_003380:
-    __tablesize(table_9865)
-    __tablestart(table_9865)
+    __tablesize(table_9733)
+    __tablestart(table_9733)
     push0
     codecopy
     push1 0x40
@@ -10015,8 +9883,8 @@ _jump_dest_unknown_003380:
     pop
     push1 0x24
     mload
-    __tablesize(table_9913)
-    __tablestart(table_9913)
+    __tablesize(table_9781)
+    __tablestart(table_9781)
     push0
     codecopy
     push1 0x44
@@ -10113,9 +9981,72 @@ _jump_dest_unknown_003400:
     push0
     push0
     revert
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
+    stop
 
-// univ3 callback
-_jump_dest_univ3_callback_00342f:
+_jump_dest_unknown_003440:
+    dup1
+    push1 0x1e
+    add
+    calldataload
+    push1 0xf0
+    shr
+    dup1
+    dup3
+    push1 0x20
+    add
+    push0
+    calldatacopy
+    push0
+    push0
+    dup3
+    push0
+    dup6
+    push1 0x15
+    add
+    calldataload
+    push1 0xb8
+    shr
+    dup7
+    chainid
+    add
+    calldataload
+    push1 0x60
+    shr
+    gas
+    call
+    swap2
+    add
+    push1 0x20
+    add
+    swap1
+    dup2
+    calldataload
+    push0
+    byte
+    push1 0x06
+    shl
+    jumpi
+    push0
+    push0
+    revert
+
+_jump_dest_unknown_003476:
     origin
     push20 0xae2fc483527b8ef99eb5d9b44875f005ba1fae13
     eq
@@ -10191,354 +10122,362 @@ _jump_dest_univ3_callback_00342f:
     push1 0xf0
     shr
     jumpi
-    stop
+    push20 0xae2fc483527b8ef99eb5d9b44875f005ba1fae13
+    caller
+    eq
+    iszero
+    push2 0x0180
+    jumpi
+    push0
+    push0
+    revert
 }
 // transferFrom(address,address,uint256)
-#define table table_227 {
-    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_215 {
+    0x23b872dd0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_250 {
+#define table table_238 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transferFrom(address,address,uint256)
-#define table table_467 {
-    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_458 {
+    0x23b872dd0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_490 {
+#define table table_481 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transferFrom(address,address,uint256)
-#define table table_560 {
-    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_551 {
+    0x23b872dd0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_593 {
+#define table table_584 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // transfer(address,uint256)
-#define table table_651 {
+#define table table_642 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_674 {
+#define table table_665 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_745 {
+#define table table_736 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_768 {
+#define table table_759 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_838 {
+#define table table_829 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_871 {
+#define table table_862 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // transfer(address,uint256)
-#define table table_929 {
+#define table table_920 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_952 {
+#define table table_943 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_1023 {
+#define table table_1014 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1046 {
+#define table table_1037 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_1116 {
+#define table table_1107 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1149 {
+#define table table_1140 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // transfer(address,uint256)
-#define table table_1207 {
+#define table table_1198 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1237 {
+#define table table_1228 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_1319 {
+#define table table_1310 {
     0xa9059cbb
 }
 
-#define table table_1349 {
+#define table table_1340 {
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000001f2f10d1c40777ae1da742455c65828ff36df387
     0x0000000000000000000000000000000000000000000000000000000000000080
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1356 {
+#define table table_1347 {
     0x022c0d9f
 }
 
 // transfer(address,uint256)
-#define table table_1429 {
+#define table table_1420 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1459 {
+#define table table_1450 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_1540 {
+#define table table_1531 {
     0xa9059cbb
 }
 
-#define table table_1570 {
+#define table table_1561 {
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000001f2f10d1c40777ae1da742455c65828ff36df387
     0x0000000000000000000000000000000000000000000000000000000000000080
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1577 {
+#define table table_1568 {
     0x022c0d9f
 }
 
 // transfer(address,uint256)
-#define table table_1649 {
+#define table table_1640 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1687 {
+#define table table_1678 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // transfer(address,uint256)
-#define table table_1758 {
+#define table table_1749 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1788 {
+#define table table_1779 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_1870 {
+#define table table_1861 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_1900 {
+#define table table_1891 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_1981 {
+#define table table_1972 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_2011 {
+#define table table_2002 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_2092 {
+#define table table_2083 {
     0xa9059cbb
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_2122 {
+#define table table_2113 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
 // transfer(address,uint256)
-#define table table_2230 {
+#define table table_2221 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // withdraw(uint256)
-#define table table_2284 {
+#define table table_2275 {
     0x2e1a7d4d
 }
 
 // transferFrom(address,address,uint256)
-#define table table_2384 {
-    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_2375 {
+    0x23b872dd0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // transfer(address,uint256)
-#define table table_2481 {
+#define table table_2472 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // transfer(address,uint256)
-#define table table_2578 {
+#define table table_2569 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_2675 {
+#define table table_2666 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_2730 {
+#define table table_2721 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // approve(address,uint256)
-#define table table_3312 {
+#define table table_3279 {
     0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
     0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff
 }
 
 // approve(address,uint256)
-#define table table_3369 {
+#define table table_3336 {
     0x095ea7b3
 }
 
 // swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
-#define table table_3422 {
+#define table table_3389 {
     0x52bbbe2900000000000000000000000000000000000000000000000000000000
-    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000ff000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -10552,12 +10491,12 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
-#define table table_3504 {
+#define table table_3471 {
     0x52bbbe2900000000000000000000000000000000000000000000000000000000
-    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000ff000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -10571,14 +10510,14 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // approve(address,uint256)
-#define table table_3583 {
+#define table table_3550 {
     0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
     0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff
 }
 
 // swapExactAmountOut(address,uint256,address,uint256,uint256)
-#define table table_3800 {
+#define table table_3767 {
     0x7c5e9ea400000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -10588,21 +10527,21 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // transferFrom(address,address,uint256)
-#define table table_4300 {
-    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_4243 {
+    0x23b872dd0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
 // transferFrom(address,address,uint256)
-#define table table_4322 {
-    0x23b872dd0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_4265 {
+    0x23b872dd0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_4405 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_4348 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10612,9 +10551,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_4483 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_4426 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -10625,19 +10564,19 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // transfer(address,uint256)
-#define table table_4532 {
+#define table table_4475 {
     0xa9059cbb
 }
 
 // transfer(address,uint256)
-#define table table_4555 {
+#define table table_4498 {
     0xa9059cbb
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_4610 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_4553 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -10647,9 +10586,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_4689 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_4632 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10660,9 +10599,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_4766 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_4709 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10674,9 +10613,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_4871 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_4814 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10688,9 +10627,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_4973 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_4916 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -10702,9 +10641,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_5080 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_5023 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -10716,21 +10655,21 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // transfer(address,uint256)
-#define table table_5168 {
+#define table table_5111 {
     0xa9059cbb
 }
 
 // mint(address,int24,int24,uint128,bytes)
-#define table table_5520 {
-    0x3c8a7d8d0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_5449 {
+    0x3c8a7d8d0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // burn(int24,int24,uint128)
-#define table table_5834 {
+#define table table_5751 {
     0xa34123a700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -10739,155 +10678,155 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // collect(address,int24,int24,uint128,uint128)
-#define table table_5889 {
-    0x4f1eb3d80000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_5806 {
+    0x4f1eb3d80000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
-#define table table_6016 {
+#define table table_5933 {
     0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
     0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
     0x478aa9a39f403cb768dd02cbee326c3e7da348845f
 }
 
 // transfer(address,uint256)
-#define table table_6027 {
+#define table table_5944 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_6046 {
+#define table table_5963 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
-#define table table_6135 {
+#define table table_6052 {
     0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
     0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
     0x478aa9a39f403cb768dd02cbee326c3e7da348845f
 }
 
 // transfer(address,uint256)
-#define table table_6146 {
+#define table table_6063 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_6165 {
+#define table table_6082 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000080
 }
 
-#define table table_6253 {
+#define table table_6170 {
     0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
     0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
     0x478aa9a39f403cb768dd02cbee326c3e7da348845f
 }
 
 // transfer(address,uint256)
-#define table table_6264 {
+#define table table_6181 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
-#define table table_6283 {
+#define table table_6200 {
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000001f2f10d1c40777ae1da742455c65828ff36df387
     0x0000000000000000000000000000000000000000000000000000000000000080
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_6290 {
+#define table table_6207 {
     0x022c0d9f
 }
 
-#define table table_6370 {
+#define table table_6287 {
     0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
     0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
     0x478aa9a39f403cb768dd02cbee326c3e7da348845f
 }
 
 // transfer(address,uint256)
-#define table table_6381 {
+#define table table_6298 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
-#define table table_6400 {
+#define table table_6317 {
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x0000000000000000000000006b75d8af000000e20b7a7ddf000ba900b4009a80
+    0x0000000000000000000000001f2f10d1c40777ae1da742455c65828ff36df387
     0x0000000000000000000000000000000000000000000000000000000000000080
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_6407 {
+#define table table_6324 {
     0x022c0d9f
 }
 
-#define table table_6488 {
+#define table table_6405 {
     0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
     0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
     0x478aa9a39f403cb768dd02cbee326c3e7da348845f
 }
 
 // transfer(address,uint256)
-#define table table_6499 {
+#define table table_6416 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_6522 {
+#define table table_6439 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
-#define table table_6604 {
+#define table table_6521 {
     0xff5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f0000000000000000000000
     0x00000000000000000000000000000000000000000096e8ac4277198ff8b6f785
     0x478aa9a39f403cb768dd02cbee326c3e7da348845f
 }
 
 // transfer(address,uint256)
-#define table table_6615 {
+#define table table_6532 {
     0xa9059cbb00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_6638 {
+#define table table_6555 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // mint(address,int24,int24,uint128,bytes)
-#define table table_6696 {
-    0x3c8a7d8d0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_6613 {
+    0x3c8a7d8d0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -10899,12 +10838,12 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
-#define table table_6853 {
+#define table table_6770 {
     0x52bbbe2900000000000000000000000000000000000000000000000000000000
-    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000ff000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -10918,12 +10857,12 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)
-#define table table_6935 {
+#define table table_6852 {
     0x52bbbe2900000000000000000000000000000000000000000000000000000000
-    0x000000e00000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000e00000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000ff000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -10937,9 +10876,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7017 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_6934 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10951,9 +10890,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7236 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_7153 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10965,9 +10904,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7390 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_7307 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10979,9 +10918,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7480 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_7397 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x00000001ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff00000000000000000000000000000000000000000000000000000001
     0x000276a400000000000000000000000000000000000000000000000000000000
@@ -10993,29 +10932,29 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_7575 {
+#define table table_7492 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(uint256,uint256,address,bytes)
-#define table table_7632 {
+#define table table_7549 {
     0x022c0d9f00000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
-    0x000000000000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+    0x000000000000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000008000000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7689 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_7606 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -11027,9 +10966,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7779 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_7696 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -11041,9 +10980,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7873 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_7790 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -11055,9 +10994,9 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // swap(address,bool,int256,uint160,bytes)
-#define table table_7998 {
-    0x128acb080000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_7915 {
+    0x128acb080000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d2500000000000000000000000000000000000000000000000000000000
@@ -11069,30 +11008,30 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // deposit()
-#define table table_8120 {
+#define table table_8037 {
     0xd0e30db0
 }
 
 // withdraw(uint256)
-#define table table_8157 {
+#define table table_8074 {
     0x2e1a7d4d00000000000000000000000000000000000000000000000000000000
     0x00000000
 }
 
 // approve(address,uint256)
-#define table table_8257 {
+#define table table_8174 {
     0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
     0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff
 }
 
 // approve(address,uint256)
-#define table table_8311 {
+#define table table_8228 {
     0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
 }
 
 // exchange(int128,int128,uint256,uint256)
-#define table table_8680 {
+#define table table_8597 {
     0x3df0212400000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -11101,7 +11040,7 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // exchange(uint256,uint256,uint256,uint256)
-#define table table_8790 {
+#define table table_8707 {
     0x5b41b90800000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -11110,14 +11049,14 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // approve(address,uint256)
-#define table table_9144 {
+#define table table_9037 {
     0x095ea7b3000000000000000000000000ba12222222228d8ba445958a75a0704d
     0x566bf2c8ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     0xffffffff
 }
 
 // buyBaseToken(uint256,uint256,bytes)
-#define table table_9172 {
+#define table table_9065 {
     0xe67ce70600000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
@@ -11126,65 +11065,65 @@ _jump_dest_univ3_callback_00342f:
 }
 
 // approve(address,uint256)
-#define table table_9206 {
+#define table table_9099 {
     0x095ea7b3
 }
 
 // approve(address,uint256)
-#define table table_9246 {
+#define table table_9139 {
     0x095ea7b3
 }
 
 // sellBaseToken(uint256,uint256,bytes)
-#define table table_9287 {
+#define table table_9180 {
     0x8dae7333
 }
 
-#define table table_9291 {
+#define table table_9184 {
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000060
     0x0000000000000000000000000000000000000000000000000000000000000000
 }
 
 // sellBase(address)
-#define table table_9347 {
-    0xbd6015b40000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_9240 {
+    0xbd6015b40000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
 // sellQuote(address)
-#define table table_9401 {
-    0xdd93f59a0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_9294 {
+    0xdd93f59a0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
 // balanceOf(address)
-#define table table_9475 {
-    0x70a082310000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a80
+#define table table_9371 {
+    0x70a082310000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df387
 }
 
 // approve(address,uint256)
-#define table table_9759 {
+#define table table_9627 {
     0x095ea7b3
 }
 
-#define table table_9807 {
-    0xc31b8d7a0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_9675 {
+    0xc31b8d7a0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000000
     0x00000000000000000000000000000000fffd8963efd1fc6a506488495d951d52
     0x63988d25
 }
 
 // approve(address,uint256)
-#define table table_9865 {
+#define table table_9733 {
     0x095ea7b3
 }
 
-#define table table_9913 {
-    0xc31b8d7a0000000000000000000000006b75d8af000000e20b7a7ddf000ba900
-    0xb4009a8000000000000000000000000000000000000000000000000000000000
+#define table table_9781 {
+    0xc31b8d7a0000000000000000000000001f2f10d1c40777ae1da742455c65828f
+    0xf36df38700000000000000000000000000000000000000000000000000000000
     0x0000000100000000000000000000000000000000000000000000000000000000
     0x0000000000000000000000000000000000000000000000000000000000000001
     0x000276a4

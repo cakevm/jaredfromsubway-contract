@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request_target:
+    branches: [main]
+
+jobs:
+  test:
+    name: make test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      MAINNET_HTTP: ${{ secrets.MAINNET_HTTP }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.ref }}
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+      - uses: cakevm/huff-neo-toolchain@v1
+
+      - run: forge test
